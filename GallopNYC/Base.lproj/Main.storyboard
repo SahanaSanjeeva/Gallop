@@ -300,14 +300,160 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ovD-Jx-Z3b">
-                                <rect key="frame" x="104" y="142" width="187" height="117"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" alwaysBounceHorizontal="YES" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UgC-oF-LKJ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.82626407619999998" blue="0.79167602859999997" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="programs-slide-1-1024x590" translatesAutoresizingMaskIntoConstraints="NO" id="T8c-bs-rZX">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="183"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome To GallopNYC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4lH-L9-5bp">
+                                        <rect key="frame" x="26" y="29" width="246" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iWn-Z8-oZg">
+                                        <rect key="frame" x="26" y="81" width="332" height="38"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <string key="text">We have the horsepower to change the lives 
+of people with disabilities</string>
+                                        <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="06_blurred" translatesAutoresizingMaskIntoConstraints="NO" id="Kfq-sU-yrh">
+                                        <rect key="frame" x="0.0" y="205" width="375" height="165"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="We can help change the life of New Yorkers with disabilities" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XXU-7I-8fh">
+                                        <rect key="frame" x="8" y="205" width="359" height="27"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="14"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zTy-4s-w04">
+                                        <rect key="frame" x="8" y="230" width="131" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Support Our Riders" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Gu-kN-iBJ">
+                                                <rect key="frame" x="8" y="8" width="115" height="23"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="12"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Most of our riders cannot afford our fees. You can help a rider stay on a horse. Click here:" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lba-zI-tW8">
+                                                <rect key="frame" x="8" y="29" width="115" height="71"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="12"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZNZ-Ts-iMq">
+                                                <rect key="frame" x="36" y="98" width="59" height="22"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.26055530999999998" green="0.56548592929999997" blue="0.12655440879999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="13"/>
+                                                <state key="normal" title="Donate">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pfd-dl-Ctg">
+                                        <rect key="frame" x="153" y="230" width="133" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MCN-sr-xoK">
+                                                <rect key="frame" x="10" y="29" width="115" height="71"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <string key="text" base64-UTF8="YES">
+Vm9sdW50ZWVyaW5nIHdpdGggR2FsbG9wTllDIGlzIHJld2FyZGluZywgZXhjaXRpbmcsIGFuZCBmdW4h
+ESA
+</string>
+                                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="12"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Become a Volunteer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qQU-eD-8tn">
+                                                <rect key="frame" x="9" y="8" width="115" height="23"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="12"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kmB-9e-NbV">
+                                                <rect key="frame" x="38" y="98" width="59" height="22"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.26055530999999998" green="0.56548592929999997" blue="0.12655440879999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="13"/>
+                                                <state key="normal" title="Join Now">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mU5-8I-Arh">
+                                        <rect key="frame" x="0.0" y="378" width="375" height="223"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="About Us:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uTc-Kn-C4X">
+                                                <rect key="frame" x="8" y="8" width="100" height="18"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="13"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gbX-uP-gJm">
+                                                <rect key="frame" x="8" y="34" width="359" height="87"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <string key="text">GallopNYC offers therapeutic horsemanship programs to children and adults with disabilities and special needs, including Veterans and at risk youth. We serve 350 riders a week and operate our riding program at five locations. Schedules at each location vary seasonally. This fall (2016) we open our own dedicated site at Gemini Stables!</string>
+                                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="13"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Our Mission:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hx8-o6-x5x">
+                                                <rect key="frame" x="8" y="129" width="100" height="23"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="13"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KwI-05-gT1">
+                                                <rect key="frame" x="8" y="149" width="177" height="66"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <string key="text">We use therapeutic horsemanship to help riders In NYC with disabilities walk, talk and learn,inspiring them to live their lives as fully, independently and productively as possible.</string>
+                                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="11"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="That every child with a disability in New York City has access to therapeutic horseback riding." textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wCw-6G-LAm">
+                                                <rect key="frame" x="207" y="149" width="163" height="66"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="12"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Our Vision:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZoB-La-WCf">
+                                                <rect key="frame" x="207" y="129" width="100" height="23"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="13"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="1" green="0.90988707652337331" blue="0.86393200155734551" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -384,25 +530,229 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Contact" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8FB-2C-5wQ">
-                                <rect key="frame" x="123" y="159" width="161" height="94"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.2045529572" green="0.29518908090000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FSR-EY-zv4">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Am9-pk-3cx">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="932"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Grooming-300x199" translatesAutoresizingMaskIntoConstraints="NO" id="bOS-4b-NL2">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="134"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="134" id="W0Q-x2-RRt"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Name (Required):*" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iXB-eD-xt5">
+                                                <rect key="frame" x="8" y="155" width="182" height="21"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="182" id="QUV-v1-U0e"/>
+                                                    <constraint firstAttribute="height" constant="21" id="uxW-9b-fbz"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="13Y-nr-ifQ">
+                                                <rect key="frame" x="8" y="184" width="342" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Email ID (Required):*" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="23V-b2-BNh">
+                                                <rect key="frame" x="8" y="237" width="182" height="21"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="21" id="tCi-zk-c1H"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-mail " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tEh-y8-yiq">
+                                                <rect key="frame" x="8" y="266" width="343" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get in touch with us" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oiv-yz-7XJ">
+                                                <rect key="frame" x="35" y="35" width="223" height="27"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="223" id="U6i-YR-7np"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="17"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subject:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="auS-Vf-WEA">
+                                                <rect key="frame" x="8" y="311" width="182" height="21"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="21" id="XXi-pq-vDs"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qA3-tu-cqL">
+                                                <rect key="frame" x="128" y="604" width="77" height="30"/>
+                                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="77" id="vH0-lf-B0m"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="14"/>
+                                                <state key="normal" title="Send">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="6pL-po-ZNb">
+                                                <rect key="frame" x="8" y="443" width="343" height="140"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="140" id="0Ml-Hi-T13"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="13"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="6"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                                                        <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                        <integer key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="6"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rgq-f3-0fm">
+                                                <rect key="frame" x="8" y="410" width="119" height="25"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="25" id="Tek-OX-QkO"/>
+                                                    <constraint firstAttribute="width" constant="119" id="VSK-j9-RiS"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="13"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact Info:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qeP-QT-3nR">
+                                                <rect key="frame" x="8" y="679" width="119" height="25"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="119" id="PjN-3B-uZg"/>
+                                                    <constraint firstAttribute="height" constant="25" id="tX2-Gp-YRx"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yjf-12-xY9">
+                                                <rect key="frame" x="8" y="712" width="359" height="220"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <string key="text">GallopNYC 
+Giving Alternative Learners UpLifting Opportunities, Inc. 
+540 President Street, 3rd Floor 
+Brooklyn, NY 11215 
+For Riders: info@gallopnyc.org 
+For Volunteers: volunteer@gallopnyc.org 
+Phone: 646-233-4507 (leave message) </string>
+                                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="16"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jh0-LQ-z8Z">
+                                                <rect key="frame" x="8" y="341" width="160" height="61"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="61" id="S3p-Mq-dYe"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </pickerView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="iXB-eD-xt5" firstAttribute="trailing" secondItem="23V-b2-BNh" secondAttribute="trailing" id="09c-HK-D3O"/>
+                                            <constraint firstItem="auS-Vf-WEA" firstAttribute="leading" secondItem="jh0-LQ-z8Z" secondAttribute="leading" id="0N7-t7-dWC"/>
+                                            <constraint firstItem="bOS-4b-NL2" firstAttribute="leading" secondItem="Am9-pk-3cx" secondAttribute="leading" id="14e-0l-owg"/>
+                                            <constraint firstItem="auS-Vf-WEA" firstAttribute="top" secondItem="tEh-y8-yiq" secondAttribute="bottom" constant="15" id="1tg-pm-9Iz"/>
+                                            <constraint firstAttribute="height" constant="932" id="6bh-5Z-8OQ"/>
+                                            <constraint firstItem="iXB-eD-xt5" firstAttribute="top" secondItem="bOS-4b-NL2" secondAttribute="bottom" constant="21" id="7Ig-Ay-ajY"/>
+                                            <constraint firstAttribute="trailing" secondItem="tEh-y8-yiq" secondAttribute="trailing" constant="24" id="9JB-zT-CMG"/>
+                                            <constraint firstItem="rgq-f3-0fm" firstAttribute="top" secondItem="jh0-LQ-z8Z" secondAttribute="bottom" constant="8" id="AUD-7K-FrY"/>
+                                            <constraint firstItem="6pL-po-ZNb" firstAttribute="top" secondItem="rgq-f3-0fm" secondAttribute="bottom" constant="8" symbolic="YES" id="BSN-C2-ki8"/>
+                                            <constraint firstItem="23V-b2-BNh" firstAttribute="top" secondItem="13Y-nr-ifQ" secondAttribute="bottom" constant="23" id="E6K-VL-3GI"/>
+                                            <constraint firstItem="Oiv-yz-7XJ" firstAttribute="leading" secondItem="Am9-pk-3cx" secondAttribute="leading" constant="35" id="JFO-xO-3tc"/>
+                                            <constraint firstItem="13Y-nr-ifQ" firstAttribute="top" secondItem="iXB-eD-xt5" secondAttribute="bottom" constant="8" symbolic="YES" id="JFz-t6-g0B"/>
+                                            <constraint firstAttribute="trailing" secondItem="bOS-4b-NL2" secondAttribute="trailing" id="K8S-vM-AO8"/>
+                                            <constraint firstItem="iXB-eD-xt5" firstAttribute="leading" secondItem="13Y-nr-ifQ" secondAttribute="leading" id="PCM-kc-5pi"/>
+                                            <constraint firstItem="bOS-4b-NL2" firstAttribute="top" secondItem="Am9-pk-3cx" secondAttribute="top" id="TCo-7F-xLz"/>
+                                            <constraint firstItem="qA3-tu-cqL" firstAttribute="top" secondItem="6pL-po-ZNb" secondAttribute="bottom" constant="21" id="TqA-1h-N3x"/>
+                                            <constraint firstAttribute="width" constant="375" id="UtG-nI-Ghu"/>
+                                            <constraint firstAttribute="trailing" secondItem="jh0-LQ-z8Z" secondAttribute="trailing" constant="207" id="bgq-Xq-gDa"/>
+                                            <constraint firstItem="tEh-y8-yiq" firstAttribute="trailing" secondItem="6pL-po-ZNb" secondAttribute="trailing" id="cws-0Z-K83"/>
+                                            <constraint firstItem="iXB-eD-xt5" firstAttribute="leading" secondItem="Am9-pk-3cx" secondAttribute="leadingMargin" id="f94-yT-f8x"/>
+                                            <constraint firstItem="23V-b2-BNh" firstAttribute="leading" secondItem="tEh-y8-yiq" secondAttribute="leading" id="htb-HQ-Euz"/>
+                                            <constraint firstAttribute="bottom" secondItem="qeP-QT-3nR" secondAttribute="bottom" constant="228" id="iLV-6I-0fB"/>
+                                            <constraint firstItem="qA3-tu-cqL" firstAttribute="leading" secondItem="Am9-pk-3cx" secondAttribute="leading" constant="128" id="kqc-H6-b0B"/>
+                                            <constraint firstItem="Oiv-yz-7XJ" firstAttribute="top" secondItem="Am9-pk-3cx" secondAttribute="top" constant="35" id="lI4-bz-bbj"/>
+                                            <constraint firstItem="13Y-nr-ifQ" firstAttribute="leading" secondItem="23V-b2-BNh" secondAttribute="leading" id="lct-NL-ORv"/>
+                                            <constraint firstItem="rgq-f3-0fm" firstAttribute="leading" secondItem="6pL-po-ZNb" secondAttribute="leading" id="m5K-VC-0H5"/>
+                                            <constraint firstItem="iXB-eD-xt5" firstAttribute="top" secondItem="Oiv-yz-7XJ" secondAttribute="bottom" constant="93" id="nVV-a4-5BE"/>
+                                            <constraint firstItem="tEh-y8-yiq" firstAttribute="top" secondItem="23V-b2-BNh" secondAttribute="bottom" constant="8" symbolic="YES" id="o1d-ht-rz4"/>
+                                            <constraint firstItem="jh0-LQ-z8Z" firstAttribute="top" secondItem="auS-Vf-WEA" secondAttribute="bottom" constant="9" id="rdL-Ox-tWD"/>
+                                            <constraint firstItem="jh0-LQ-z8Z" firstAttribute="leading" secondItem="rgq-f3-0fm" secondAttribute="leading" id="rtu-cI-P68"/>
+                                            <constraint firstItem="23V-b2-BNh" firstAttribute="trailing" secondItem="auS-Vf-WEA" secondAttribute="trailing" id="sQn-0w-rbH"/>
+                                            <constraint firstItem="6pL-po-ZNb" firstAttribute="leading" secondItem="qeP-QT-3nR" secondAttribute="leading" id="xRT-g7-Ljs"/>
+                                            <constraint firstItem="tEh-y8-yiq" firstAttribute="leading" secondItem="auS-Vf-WEA" secondAttribute="leading" id="zXx-RN-jmR"/>
+                                            <constraint firstItem="13Y-nr-ifQ" firstAttribute="centerX" secondItem="tEh-y8-yiq" secondAttribute="centerX" id="zfl-AF-onf"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Am9-pk-3cx" secondAttribute="bottom" id="CnP-r6-Vyc"/>
+                                    <constraint firstAttribute="trailing" secondItem="Am9-pk-3cx" secondAttribute="trailing" id="MUv-pW-9CP"/>
+                                    <constraint firstItem="Am9-pk-3cx" firstAttribute="leading" secondItem="FSR-EY-zv4" secondAttribute="leading" id="SPP-Ab-qeh"/>
+                                    <constraint firstItem="Am9-pk-3cx" firstAttribute="top" secondItem="FSR-EY-zv4" secondAttribute="top" id="Zry-8s-4ai"/>
+                                </constraints>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="FSR-EY-zv4" firstAttribute="top" secondItem="iC7-Vd-HUp" secondAttribute="top" id="BxX-h4-X6U"/>
+                            <constraint firstAttribute="trailing" secondItem="FSR-EY-zv4" secondAttribute="trailing" id="FRg-VV-ZWN"/>
+                            <constraint firstItem="FSR-EY-zv4" firstAttribute="leading" secondItem="iC7-Vd-HUp" secondAttribute="leading" id="UU1-si-ffu"/>
+                            <constraint firstItem="pNh-Nh-aIX" firstAttribute="top" secondItem="FSR-EY-zv4" secondAttribute="bottom" id="ivj-GA-vg6"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="subjectPickerView" destination="jh0-LQ-z8Z" id="L5D-I9-Pjr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sZW-fy-2Ng" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="868" y="765"/>
+            <point key="canvasLocation" x="868" y="763.26836581709154"/>
         </scene>
     </scenes>
     <resources>
+        <image name="06_blurred" width="906" height="390"/>
         <image name="GALLOP_ORNG_trans" width="60" height="40"/>
+        <image name="Grooming-300x199" width="300" height="199"/>
         <image name="More_btn" width="14" height="24"/>
+        <image name="programs-slide-1-1024x590" width="1024" height="590"/>
     </resources>
 </document>
