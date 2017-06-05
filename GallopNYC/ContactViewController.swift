@@ -11,15 +11,15 @@ import UIKit
 class ContactViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
     //@IBOutlet var subjectTextField: UITextField!
-    @IBOutlet var subjectPickerView: UIPickerView! 
+    //@IBOutlet var subjectPickerView: UIPickerView!
     
     var subjectDropContents = ["Volunteering", "Press Inquiries", "Riding", "Other"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        subjectPickerView.delegate = self
-        subjectPickerView.dataSource = self
+        //subjectPickerView.delegate = self
+        //subjectPickerView.dataSource = self
         
         //subjectPickerView.isHidden = true
         //subjectTextField.text = subjectDropContents[0]
