@@ -7,45 +7,49 @@
 //
 
 import UIKit
+import MapKit
 
-class ContactViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
-    
-    //@IBOutlet var subjectTextField: UITextField!
-    //@IBOutlet var subjectPickerView: UIPickerView!
-    
-    var subjectDropContents = ["Volunteering", "Press Inquiries", "Riding", "Other"]
-    
+class ContactViewController: UIViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+ 
+    @IBAction func sunriseMapPress(_ sender: UIButton) {
+        directionButtonPress(coordinate: CLLocationCoordinate2DMake(40.671287, -73.851157), nameTag: "Gallop Sunrise Stables")
+    }
+    
+    @IBAction func forestHillsMapPress(_ sender: UIButton) {
+        directionButtonPress(coordinate: CLLocationCoordinate2DMake(40.708390, -73.853800), nameTag: "Gallop Forest Hills")
+    }
+    
+    @IBAction func prospectMapPress(_ sender: UIButton) {
+        directionButtonPress(coordinate: CLLocationCoordinate2DMake(40.648712, -73.971300), nameTag: "Gallop Prospect Park")
+    }
+    
+    @IBAction func jamaicaBayMapPress(_ sender: UIButton) {
+        directionButtonPress(coordinate: CLLocationCoordinate2DMake(40.607770, -73.897262), nameTag: "Gallop Jamaica Bay")
+    }
+    
+    @IBAction func pelhamBayMapPress(_ sender: UIButton) {
+        directionButtonPress(coordinate: CLLocationCoordinate2DMake(40.866065, -73.813946), nameTag: "Gallop Pelham Bay Park")
+    }
+    
+    @IBAction func vanCprtlandMapPress(_ sender: UIButton) {
+        directionButtonPress(coordinate: CLLocationCoordinate2DMake(40.902000, -73.894037), nameTag: "Gallop Van Cortland Park")
+    }
+    
+    func directionButtonPress(coordinate: CLLocationCoordinate2D, nameTag: String) {
+        let regionRadius: CLLocationDistance = 1000
+        let coordinateRegion = MKCoordinateRegionMakeWithDistance(coordinate,
+                                                                  regionRadius * 2.0, regionRadius * 2.0)
+        let placeMark = MKPlacemark(coordinate: coordinate)
+        let options = [MKLaunchOptionsMapCenterKey: NSValue(mkCoordinate: coordinateRegion.center), MKLaunchOptionsMapSpanKey: NSValue(mkCoordinateSpan: coordinateRegion.span)]
         
-        //subjectPickerView.delegate = self
-        //subjectPickerView.dataSource = self
-        
-        //subjectPickerView.isHidden = true
-        //subjectTextField.text = subjectDropContents[0]
+        let mapItem = MKMapItem(placemark: placeMark)
+        mapItem.name = nameTag
+        mapItem.openInMaps(launchOptions: options)
     }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
-    
-    func numberOfComponents(in pickerView: UIPickerView) -> Int {
-        return 1
-    }
-    
-    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return subjectDropContents.count
-    }
-    
-    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return subjectDropContents[row]
-    }
-    
-    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        //subjectTextField.text = subjectDropContents[row]
-        //subjectPickerView.isHidden = true
-    }
-    
 }
 
 @IBDesignable extension UIView {

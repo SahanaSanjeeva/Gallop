@@ -7,10 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		25BC4AE892100ADFDC26ABB1 /* libPods-GallopNYC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B69EE0D820C30D5EA6FCEF5A /* libPods-GallopNYC.a */; };
 		944FCBFD1E54C0B50006819E /* DonateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944FCBFC1E54C0B50006819E /* DonateViewController.swift */; };
 		944FCBFF1E54C1210006819E /* ProgramsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944FCBFE1E54C1210006819E /* ProgramsViewController.swift */; };
 		944FCC011E54C1450006819E /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944FCC001E54C1450006819E /* ContactViewController.swift */; };
 		944FCC041E54D53B0006819E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 944FCC021E54D53B0006819E /* Main.storyboard */; };
+		94786CB31EEE09F1004534D3 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 94786CB21EEE09F1004534D3 /* Podfile */; };
+		94786CB71EF1E623004534D3 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94786CB61EF1E623004534D3 /* MapKit.framework */; };
 		94D2ACBF1E4792E700834D29 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D2ACBE1E4792E700834D29 /* AppDelegate.swift */; };
 		94D2ACC11E4792E700834D29 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D2ACC01E4792E700834D29 /* HomeViewController.swift */; };
 		94D2ACC61E4792E700834D29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94D2ACC51E4792E700834D29 /* Assets.xcassets */; };
@@ -20,10 +23,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3B2DF67D3EF5C9B42718F0D0 /* Pods-GallopNYC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GallopNYC.release.xcconfig"; path = "Pods/Target Support Files/Pods-GallopNYC/Pods-GallopNYC.release.xcconfig"; sourceTree = "<group>"; };
 		944FCBFC1E54C0B50006819E /* DonateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DonateViewController.swift; sourceTree = "<group>"; };
 		944FCBFE1E54C1210006819E /* ProgramsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgramsViewController.swift; sourceTree = "<group>"; };
 		944FCC001E54C1450006819E /* ContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		944FCC031E54D53B0006819E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		94786CB21EEE09F1004534D3 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		94786CB61EF1E623004534D3 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		94D2ACBB1E4792E700834D29 /* GallopNYC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GallopNYC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94D2ACBE1E4792E700834D29 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		94D2ACC01E4792E700834D29 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -32,6 +38,8 @@
 		94D2ACCA1E4792E700834D29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		94D2ACFA1E4E684A00834D29 /* ScheduleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
 		94D2ACFC1E5379C300834D29 /* TabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
+		B69EE0D820C30D5EA6FCEF5A /* libPods-GallopNYC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GallopNYC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F38A61C65636E19BCFDA8B65 /* Pods-GallopNYC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GallopNYC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GallopNYC/Pods-GallopNYC.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,17 +47,40 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94786CB71EF1E623004534D3 /* MapKit.framework in Frameworks */,
+				25BC4AE892100ADFDC26ABB1 /* libPods-GallopNYC.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A8725DD253E7D05B940864D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F38A61C65636E19BCFDA8B65 /* Pods-GallopNYC.debug.xcconfig */,
+				3B2DF67D3EF5C9B42718F0D0 /* Pods-GallopNYC.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6A6F54AA926F80123DBACC8F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				94786CB61EF1E623004534D3 /* MapKit.framework */,
+				B69EE0D820C30D5EA6FCEF5A /* libPods-GallopNYC.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		94D2ACB21E4792E700834D29 = {
 			isa = PBXGroup;
 			children = (
+				94786CB21EEE09F1004534D3 /* Podfile */,
 				94D2ACBD1E4792E700834D29 /* GallopNYC */,
 				94D2ACBC1E4792E700834D29 /* Products */,
+				2A8725DD253E7D05B940864D /* Pods */,
+				6A6F54AA926F80123DBACC8F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,12 +96,12 @@
 			isa = PBXGroup;
 			children = (
 				94D2ACBE1E4792E700834D29 /* AppDelegate.swift */,
-				94D2ACC01E4792E700834D29 /* HomeViewController.swift */,
 				94D2ACFC1E5379C300834D29 /* TabViewController.swift */,
-				944FCBFE1E54C1210006819E /* ProgramsViewController.swift */,
-				944FCC001E54C1450006819E /* ContactViewController.swift */,
-				944FCBFC1E54C0B50006819E /* DonateViewController.swift */,
+				94D2ACC01E4792E700834D29 /* HomeViewController.swift */,
 				94D2ACFA1E4E684A00834D29 /* ScheduleViewController.swift */,
+				944FCBFE1E54C1210006819E /* ProgramsViewController.swift */,
+				944FCBFC1E54C0B50006819E /* DonateViewController.swift */,
+				944FCC001E54C1450006819E /* ContactViewController.swift */,
 				944FCC021E54D53B0006819E /* Main.storyboard */,
 				94D2ACC51E4792E700834D29 /* Assets.xcassets */,
 				94D2ACC71E4792E700834D29 /* LaunchScreen.storyboard */,
@@ -86,9 +117,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 94D2ACCD1E4792E700834D29 /* Build configuration list for PBXNativeTarget "GallopNYC" */;
 			buildPhases = (
+				65F1D3E8C268B27D8435B0CD /* [CP] Check Pods Manifest.lock */,
 				94D2ACB71E4792E700834D29 /* Sources */,
 				94D2ACB81E4792E700834D29 /* Frameworks */,
 				94D2ACB91E4792E700834D29 /* Resources */,
+				A6E2867C00BA58717786A079 /* [CP] Embed Pods Frameworks */,
+				C3C633899735D83DA09647A0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -112,6 +146,11 @@
 					94D2ACBA1E4792E700834D29 = {
 						CreatedOnToolsVersion = 8.2.1;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -140,11 +179,60 @@
 			files = (
 				944FCC041E54D53B0006819E /* Main.storyboard in Resources */,
 				94D2ACC91E4792E700834D29 /* LaunchScreen.storyboard in Resources */,
+				94786CB31EEE09F1004534D3 /* Podfile in Resources */,
 				94D2ACC61E4792E700834D29 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		65F1D3E8C268B27D8435B0CD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A6E2867C00BA58717786A079 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GallopNYC/Pods-GallopNYC-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C3C633899735D83DA09647A0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GallopNYC/Pods-GallopNYC-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		94D2ACB71E4792E700834D29 /* Sources */ = {
@@ -278,6 +366,7 @@
 		};
 		94D2ACCE1E4792E700834D29 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F38A61C65636E19BCFDA8B65 /* Pods-GallopNYC.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -293,6 +382,7 @@
 		};
 		94D2ACCF1E4792E700834D29 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B2DF67D3EF5C9B42718F0D0 /* Pods-GallopNYC.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;

@@ -555,7 +555,7 @@ of people with disabilities</string>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9q9-Tj-bKT">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e2k-As-L8p">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e2k-As-L8p">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="1423"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="06" translatesAutoresizingMaskIntoConstraints="NO" id="KpO-EC-a0k">
@@ -809,7 +809,7 @@ GallopNYC serves hundreds of riders every week at six NYC locations. GallopNYC i
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="1650" id="Dgv-D1-lpf"/>
+                                            <constraint firstAttribute="height" constant="1423" id="Dgv-D1-lpf"/>
                                             <constraint firstAttribute="width" constant="375" id="SJR-FB-A8m"/>
                                         </constraints>
                                     </view>
@@ -912,6 +912,9 @@ Queens NY 11414</string>
                                                                 <color key="value" red="0.94066999340000002" green="0.51059099539999997" blue="0.1233318966" alpha="1" colorSpace="calibratedRGB"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="sunriseMapPress:" destination="wPu-Ex-Qjm" eventType="touchUpInside" id="ONL-8o-5I0"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -960,6 +963,9 @@ Brooklyn NY</string>
                                                                 <color key="value" red="0.94066999340000002" green="0.51059099539999997" blue="0.1233318966" alpha="1" colorSpace="calibratedRGB"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="prospectMapPress:" destination="wPu-Ex-Qjm" eventType="touchUpInside" id="YZA-ry-yia"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1008,6 +1014,9 @@ NY 10464-1007
                                                                 <color key="value" red="0.94066999340000002" green="0.51059099539999997" blue="0.1233318966" alpha="1" colorSpace="calibratedRGB"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="pelhamBayMapPress:" destination="wPu-Ex-Qjm" eventType="touchUpInside" id="jui-rk-4Zx"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1079,6 +1088,9 @@ NY 11375
                                                                 <color key="value" red="0.94066999340000002" green="0.51059099539999997" blue="0.1233318966" alpha="1" colorSpace="calibratedRGB"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="forestHillsMapPress:" destination="wPu-Ex-Qjm" eventType="touchUpInside" id="WRZ-ph-2bD"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1127,6 +1139,9 @@ Brooklyn, NY 11234
                                                                 <color key="value" red="0.94066999340000002" green="0.51059099539999997" blue="0.1233318966" alpha="1" colorSpace="calibratedRGB"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="jamaicaBayMapPress:" destination="wPu-Ex-Qjm" eventType="touchUpInside" id="Uzt-b1-2Hp"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1175,6 +1190,9 @@ The Bronx, NY 10471
                                                                 <color key="value" red="0.94066999340000002" green="0.51059099539999997" blue="0.1233318966" alpha="1" colorSpace="calibratedRGB"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="vanCprtlandMapPress:" destination="wPu-Ex-Qjm" eventType="touchUpInside" id="FH3-Ni-gBD"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
