@@ -30,8 +30,8 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4NC-25-cjm">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="900"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="blur_img_Donate" translatesAutoresizingMaskIntoConstraints="NO" id="KUj-SX-t1I">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="151"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Donate Page" translatesAutoresizingMaskIntoConstraints="NO" id="KUj-SX-t1I">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="162"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Donate to support our Riders" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8m0-tO-JQd">
@@ -116,16 +116,37 @@ Every gift goes directly to provide lessons to children who never have the oppor
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Donate To GallopNYC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NwP-iq-0l9">
-                                                <rect key="frame" x="25" y="773" width="280" height="21"/>
+                                                <rect key="frame" x="25" y="761" width="280" height="21"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="14"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Enter donation amount" borderStyle="roundedRect" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="PBn-az-tuV">
+                                                <rect key="frame" x="25" y="790" width="188" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" red="0.37718339429999997" green="0.8294952552" blue="0.18224625990000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vBL-bp-3Ee">
-                                                <rect key="frame" x="25" y="802" width="152" height="88"/>
+                                                <rect key="frame" x="38" y="828" width="105" height="64"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" title="Button" image="new-donate-button-4"/>
+                                                <connections>
+                                                    <action selector="donatePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TpX-ol-K53"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -153,6 +174,9 @@ Every gift goes directly to provide lessons to children who never have the oppor
                             <constraint firstItem="Oxk-Sx-QzQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ghZ-Iy-hm4"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="donateAmountTxt" destination="PBn-az-tuV" id="Ghy-bD-y4m"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -175,35 +199,28 @@ Every gift goes directly to provide lessons to children who never have the oppor
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qrh-Ut-SnB">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="61"/>
-                                        <color key="backgroundColor" red="0.30214992629999998" green="0.65575916229999998" blue="0.14675734409999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="18"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WIF-oZ-owF">
-                                        <rect key="frame" x="0.0" y="59" width="375" height="56"/>
-                                        <color key="backgroundColor" red="0.94042457459999995" green="0.50932761319999997" blue="0.2787535853" alpha="1" colorSpace="calibratedRGB"/>
+                                        <rect key="frame" x="0.0" y="59" width="375" height="48"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="More_btn" translatesAutoresizingMaskIntoConstraints="NO" id="9Cq-t0-hUv">
-                                        <rect key="frame" x="345" y="15" width="22" height="36"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="22" id="2mh-1g-eV7"/>
-                                            <constraint firstAttribute="height" constant="36" id="mbT-PO-Jsa"/>
-                                        </constraints>
-                                    </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D1D-cm-fjz">
-                                        <rect key="frame" x="1" y="59" width="50" height="56"/>
+                                        <rect key="frame" x="1" y="59" width="44" height="45"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="50" id="pdQ-we-X37"/>
-                                            <constraint firstAttribute="height" constant="56" id="rjh-1k-4Y3"/>
+                                            <constraint firstAttribute="width" constant="44" id="pdQ-we-X37"/>
+                                            <constraint firstAttribute="height" constant="45" id="rjh-1k-4Y3"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="14"/>
-                                        <color key="tintColor" red="0.26055530999999998" green="0.56548592929999997" blue="0.12655440879999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="11"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <state key="normal" title="HOME">
-                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <state key="selected" title="HOME">
                                             <color key="titleColor" name="textColor" catalog="System" colorSpace="catalog"/>
@@ -213,13 +230,13 @@ Every gift goes directly to provide lessons to children who never have the oppor
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qcb-ZT-raL">
-                                        <rect key="frame" x="58" y="59" width="79" height="56"/>
-                                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="14"/>
-                                        <color key="tintColor" red="0.26055530999999998" green="0.56548592929999997" blue="0.12655440879999999" alpha="1" colorSpace="calibratedRGB"/>
-                                        <state key="normal" title="SCHEDULE">
+                                        <rect key="frame" x="53" y="59" width="84" height="47"/>
+                                        <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="11"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="VOLUNTEER">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
-                                        <state key="selected" title="SCHEDULE">
+                                        <state key="selected" title="VOLUNTEER">
                                             <color key="titleColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                         </state>
                                         <connections>
@@ -227,12 +244,12 @@ Every gift goes directly to provide lessons to children who never have the oppor
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aeP-2c-d9s">
-                                        <rect key="frame" x="211" y="59" width="82" height="56"/>
+                                        <rect key="frame" x="211" y="59" width="82" height="46"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="82" id="MRH-ow-SZx"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="14"/>
-                                        <color key="tintColor" red="0.26055530999999998" green="0.56548592929999997" blue="0.12655440879999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="11"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <state key="normal" title="PROGRAMS">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
@@ -244,12 +261,12 @@ Every gift goes directly to provide lessons to children who never have the oppor
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Xx-r3-bfh">
-                                        <rect key="frame" x="298" y="59" width="76" height="56"/>
+                                        <rect key="frame" x="298" y="59" width="76" height="46"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="76" id="RTP-XO-AlY"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="14"/>
-                                        <color key="tintColor" red="0.26055530999999998" green="0.56548592929999997" blue="0.12655440879999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="11"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <state key="normal" title="CONTACT">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
@@ -261,7 +278,7 @@ Every gift goes directly to provide lessons to children who never have the oppor
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hQi-W5-Ei4">
-                                        <rect key="frame" x="53" y="60" width="2" height="56"/>
+                                        <rect key="frame" x="48" y="60" width="2" height="45"/>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="2" id="CCS-1u-cPg"/>
@@ -271,7 +288,7 @@ Every gift goes directly to provide lessons to children who never have the oppor
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zLt-sA-MEf">
-                                        <rect key="frame" x="140" y="60" width="2" height="56"/>
+                                        <rect key="frame" x="140" y="60" width="2" height="45"/>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="2" id="E4Q-vK-60M"/>
@@ -281,29 +298,36 @@ Every gift goes directly to provide lessons to children who never have the oppor
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eku-zp-Kzr">
-                                        <rect key="frame" x="208" y="59" width="2" height="56"/>
+                                        <rect key="frame" x="208" y="59" width="2" height="46"/>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="txx-uN-zPZ">
-                                        <rect key="frame" x="295" y="59" width="2" height="56"/>
+                                        <rect key="frame" x="295" y="59" width="2" height="46"/>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Gallop logo_new" translatesAutoresizingMaskIntoConstraints="NO" id="tR8-oS-Tis">
-                                        <rect key="frame" x="8" y="3" width="87" height="57"/>
+                                        <rect key="frame" x="8" y="3" width="61" height="57"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="87" id="Lsg-kK-xn9"/>
+                                            <constraint firstAttribute="width" constant="61" id="Lsg-kK-xn9"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="More_btn" translatesAutoresizingMaskIntoConstraints="NO" id="9Cq-t0-hUv">
+                                        <rect key="frame" x="345" y="23" width="22" height="28"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="22" id="2mh-1g-eV7"/>
+                                            <constraint firstAttribute="height" constant="28" id="mbT-PO-Jsa"/>
                                         </constraints>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="WIF-oZ-owF" secondAttribute="bottom" id="0TW-qR-INu"/>
+                                    <constraint firstAttribute="bottom" secondItem="WIF-oZ-owF" secondAttribute="bottom" constant="8" id="0TW-qR-INu"/>
                                     <constraint firstItem="eku-zp-Kzr" firstAttribute="baseline" secondItem="txx-uN-zPZ" secondAttribute="baseline" id="3hB-XC-eW0"/>
                                     <constraint firstItem="hQi-W5-Ei4" firstAttribute="firstBaseline" secondItem="zLt-sA-MEf" secondAttribute="firstBaseline" id="4rt-d8-Mua"/>
                                     <constraint firstAttribute="trailing" secondItem="Qrh-Ut-SnB" secondAttribute="trailing" id="5rh-6t-Fy7"/>
@@ -316,20 +340,20 @@ Every gift goes directly to provide lessons to children who never have the oppor
                                     <constraint firstItem="qcb-ZT-raL" firstAttribute="leading" secondItem="hQi-W5-Ei4" secondAttribute="trailing" constant="3" id="Jcw-fr-gUc"/>
                                     <constraint firstItem="hQi-W5-Ei4" firstAttribute="top" secondItem="hPO-vQ-1Iv" secondAttribute="top" constant="60" id="Kp3-N7-Xij"/>
                                     <constraint firstItem="Qrh-Ut-SnB" firstAttribute="top" secondItem="hPO-vQ-1Iv" secondAttribute="top" id="LNP-1z-N7m"/>
-                                    <constraint firstAttribute="bottom" secondItem="hQi-W5-Ei4" secondAttribute="bottom" constant="-1" id="MLq-dP-h7c"/>
+                                    <constraint firstAttribute="bottom" secondItem="hQi-W5-Ei4" secondAttribute="bottom" constant="10" id="MLq-dP-h7c"/>
                                     <constraint firstItem="eku-zp-Kzr" firstAttribute="firstBaseline" secondItem="txx-uN-zPZ" secondAttribute="firstBaseline" id="SPU-sM-Xwm"/>
                                     <constraint firstItem="D1D-cm-fjz" firstAttribute="top" secondItem="Qrh-Ut-SnB" secondAttribute="bottom" constant="-2" id="T8y-3F-Owb"/>
                                     <constraint firstItem="aeP-2c-d9s" firstAttribute="leading" secondItem="eku-zp-Kzr" secondAttribute="trailing" constant="1" id="U7r-uu-fh2"/>
-                                    <constraint firstItem="hQi-W5-Ei4" firstAttribute="leading" secondItem="D1D-cm-fjz" secondAttribute="trailing" constant="2" id="UC3-FU-hZ3"/>
+                                    <constraint firstItem="hQi-W5-Ei4" firstAttribute="leading" secondItem="D1D-cm-fjz" secondAttribute="trailing" constant="3" id="UC3-FU-hZ3"/>
                                     <constraint firstItem="WIF-oZ-owF" firstAttribute="top" secondItem="tR8-oS-Tis" secondAttribute="bottom" constant="-1" id="XFK-hm-ii0"/>
-                                    <constraint firstItem="qcb-ZT-raL" firstAttribute="baseline" secondItem="D1D-cm-fjz" secondAttribute="firstBaseline" id="Z5X-5I-48q"/>
+                                    <constraint firstItem="qcb-ZT-raL" firstAttribute="baseline" secondItem="D1D-cm-fjz" secondAttribute="firstBaseline" constant="1" id="Z5X-5I-48q"/>
                                     <constraint firstItem="Qrh-Ut-SnB" firstAttribute="trailing" secondItem="6Xx-r3-bfh" secondAttribute="trailing" constant="1" id="a19-oE-fS6"/>
-                                    <constraint firstItem="eku-zp-Kzr" firstAttribute="baseline" secondItem="WIF-oZ-owF" secondAttribute="baseline" id="afn-hh-Fmz"/>
+                                    <constraint firstItem="eku-zp-Kzr" firstAttribute="baseline" secondItem="WIF-oZ-owF" secondAttribute="baseline" constant="-2" id="afn-hh-Fmz"/>
                                     <constraint firstItem="hQi-W5-Ei4" firstAttribute="baseline" secondItem="zLt-sA-MEf" secondAttribute="baseline" id="bBl-Fl-dcA"/>
-                                    <constraint firstItem="9Cq-t0-hUv" firstAttribute="top" secondItem="hPO-vQ-1Iv" secondAttribute="top" constant="15" id="brM-Sg-Ede"/>
-                                    <constraint firstItem="D1D-cm-fjz" firstAttribute="baseline" secondItem="qcb-ZT-raL" secondAttribute="firstBaseline" id="ccr-mh-Krj"/>
+                                    <constraint firstItem="9Cq-t0-hUv" firstAttribute="top" secondItem="hPO-vQ-1Iv" secondAttribute="top" constant="23" id="brM-Sg-Ede"/>
                                     <constraint firstItem="Qrh-Ut-SnB" firstAttribute="leading" secondItem="WIF-oZ-owF" secondAttribute="leading" id="d0s-xm-Lc5"/>
                                     <constraint firstItem="9Cq-t0-hUv" firstAttribute="trailing" secondItem="hPO-vQ-1Iv" secondAttribute="trailingMargin" id="dXG-lQ-TKF"/>
+                                    <constraint firstItem="qcb-ZT-raL" firstAttribute="centerY" secondItem="hQi-W5-Ei4" secondAttribute="centerY" id="eaC-cC-BSl"/>
                                     <constraint firstItem="eku-zp-Kzr" firstAttribute="firstBaseline" secondItem="WIF-oZ-owF" secondAttribute="firstBaseline" id="hnz-Is-byO"/>
                                     <constraint firstItem="Qrh-Ut-SnB" firstAttribute="leading" secondItem="hPO-vQ-1Iv" secondAttribute="leading" id="jdc-jt-KwK"/>
                                     <constraint firstItem="D1D-cm-fjz" firstAttribute="leading" secondItem="hPO-vQ-1Iv" secondAttribute="leading" constant="1" id="jwG-GT-8sk"/>
@@ -337,7 +361,7 @@ Every gift goes directly to provide lessons to children who never have the oppor
                                     <constraint firstItem="6Xx-r3-bfh" firstAttribute="leading" secondItem="aeP-2c-d9s" secondAttribute="trailing" constant="5" id="lAx-VH-hZS"/>
                                     <constraint firstItem="D1D-cm-fjz" firstAttribute="top" secondItem="qcb-ZT-raL" secondAttribute="top" id="mct-2R-jVm"/>
                                     <constraint firstItem="WIF-oZ-owF" firstAttribute="trailing" secondItem="6Xx-r3-bfh" secondAttribute="trailing" constant="1" id="nIx-x8-sU2"/>
-                                    <constraint firstItem="D1D-cm-fjz" firstAttribute="bottom" secondItem="hPO-vQ-1Iv" secondAttribute="bottomMargin" constant="8" id="oKs-mh-bvU"/>
+                                    <constraint firstItem="D1D-cm-fjz" firstAttribute="bottom" secondItem="hPO-vQ-1Iv" secondAttribute="bottomMargin" constant="-3" id="oKs-mh-bvU"/>
                                     <constraint firstItem="aeP-2c-d9s" firstAttribute="baseline" secondItem="6Xx-r3-bfh" secondAttribute="firstBaseline" id="pAy-Rw-Iyz"/>
                                     <constraint firstItem="aeP-2c-d9s" firstAttribute="top" secondItem="6Xx-r3-bfh" secondAttribute="top" id="piD-nb-8jl"/>
                                     <constraint firstItem="eku-zp-Kzr" firstAttribute="leading" secondItem="zLt-sA-MEf" secondAttribute="trailing" constant="66" id="vu3-m1-noY"/>
@@ -346,16 +370,16 @@ Every gift goes directly to provide lessons to children who never have the oppor
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g4f-xo-Fh4">
-                                <rect key="frame" x="0.0" y="115" width="375" height="552"/>
-                                <color key="backgroundColor" red="1" green="0.82626407619999998" blue="0.79167602859999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="0.0" y="104" width="375" height="563"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fea-lH-Nvd">
-                                <rect key="frame" x="143" y="59" width="63" height="56"/>
+                                <rect key="frame" x="143" y="59" width="63" height="46"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="63" id="pJO-4y-Jhq"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="14"/>
-                                <color key="tintColor" red="0.26055530999999998" green="0.56548592929999997" blue="0.12655440879999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="11"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="DONATE">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -373,14 +397,14 @@ Every gift goes directly to provide lessons to children who never have the oppor
                             <constraint firstItem="aeP-2c-d9s" firstAttribute="leading" secondItem="fea-lH-Nvd" secondAttribute="trailing" constant="5" id="8kG-VC-ADU"/>
                             <constraint firstAttribute="trailing" secondItem="hPO-vQ-1Iv" secondAttribute="trailing" id="Amm-Li-igs"/>
                             <constraint firstItem="hPO-vQ-1Iv" firstAttribute="leading" secondItem="g4f-xo-Fh4" secondAttribute="leading" id="IU2-nC-ZV4"/>
-                            <constraint firstItem="g4f-xo-Fh4" firstAttribute="top" secondItem="hPO-vQ-1Iv" secondAttribute="bottom" id="Lzd-ML-nYP"/>
+                            <constraint firstItem="g4f-xo-Fh4" firstAttribute="top" secondItem="hPO-vQ-1Iv" secondAttribute="bottom" constant="-11" id="Lzd-ML-nYP"/>
                             <constraint firstItem="qcb-ZT-raL" firstAttribute="top" secondItem="fea-lH-Nvd" secondAttribute="top" id="MJh-ql-o0j"/>
                             <constraint firstItem="g4f-xo-Fh4" firstAttribute="bottom" secondItem="ZRA-5M-pXC" secondAttribute="top" id="Nt6-Gm-M2K"/>
-                            <constraint firstItem="g4f-xo-Fh4" firstAttribute="top" secondItem="0sa-3s-0f7" secondAttribute="top" constant="115" id="OgB-2F-RC4"/>
+                            <constraint firstItem="g4f-xo-Fh4" firstAttribute="top" secondItem="0sa-3s-0f7" secondAttribute="top" constant="104" id="OgB-2F-RC4"/>
                             <constraint firstItem="qcb-ZT-raL" firstAttribute="baseline" secondItem="fea-lH-Nvd" secondAttribute="baseline" id="SFa-zz-1gG"/>
                             <constraint firstItem="hPO-vQ-1Iv" firstAttribute="trailing" secondItem="g4f-xo-Fh4" secondAttribute="trailing" id="VTJ-jl-e0r"/>
                             <constraint firstItem="hPO-vQ-1Iv" firstAttribute="leading" secondItem="0sa-3s-0f7" secondAttribute="leading" id="ZVh-0P-b9I"/>
-                            <constraint firstItem="fea-lH-Nvd" firstAttribute="bottom" secondItem="hPO-vQ-1Iv" secondAttribute="bottom" id="nfe-JO-qIA"/>
+                            <constraint firstItem="fea-lH-Nvd" firstAttribute="bottom" secondItem="hPO-vQ-1Iv" secondAttribute="bottom" constant="-10" id="nfe-JO-qIA"/>
                             <constraint firstItem="fea-lH-Nvd" firstAttribute="leading" secondItem="qcb-ZT-raL" secondAttribute="trailing" constant="6" id="ssJ-hG-GZa"/>
                             <constraint firstItem="hPO-vQ-1Iv" firstAttribute="top" secondItem="0sa-3s-0f7" secondAttribute="top" id="vCh-se-5if"/>
                         </constraints>
@@ -416,7 +440,7 @@ Every gift goes directly to provide lessons to children who never have the oppor
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dt2-RO-4sb">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="programs-slide-1-1024x590" translatesAutoresizingMaskIntoConstraints="NO" id="T8c-bs-rZX">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Home page" translatesAutoresizingMaskIntoConstraints="NO" id="T8c-bs-rZX">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="163"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
@@ -447,14 +471,14 @@ of people with disabilities</string>
                                                 <rect key="frame" x="18" y="215" width="338" height="131"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <string key="text">GallopNYC offers therapeutic horsemanship programs to children and adults with disabilities and special needs, including Veterans and at risk youth. We serve 500 riders a week and operate our riding program at six locations. Schedules at each location vary seasonally. This fall (2016) we open our own dedicated site at Gemini Stables!</string>
-                                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="15"/>
+                                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="13"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Our Mission:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hx8-o6-x5x">
-                                                <rect key="frame" x="18" y="354" width="100" height="23"/>
+                                                <rect key="frame" x="18" y="354" width="153" height="23"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="13"/>
+                                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="15"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -462,21 +486,21 @@ of people with disabilities</string>
                                                 <rect key="frame" x="18" y="376" width="338" height="80"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <string key="text">We use therapeutic horsemanship to help riders In NYC with disabilities walk, talk and learn,inspiring them to live their lives as fully, independently and productively as possible.</string>
-                                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="15"/>
+                                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="13"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Our Vision:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZoB-La-WCf">
-                                                <rect key="frame" x="18" y="464" width="100" height="23"/>
+                                                <rect key="frame" x="18" y="464" width="160" height="23"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="13"/>
+                                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="15"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="That every child with a disability in New York City has access to therapeutic horseback riding." textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wCw-6G-LAm">
                                                 <rect key="frame" x="18" y="484" width="338" height="52"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="15"/>
+                                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="13"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -515,7 +539,7 @@ of people with disabilities</string>
         <!--Schedule View Controller-->
         <scene sceneID="6zo-Jx-oGf">
             <objects>
-                <viewController storyboardIdentifier="ScheduleScene" id="HL7-6e-Gbi" customClass="ScheduleViewController" customModule="GallopNYC" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="VolunteerScene" id="HL7-6e-Gbi" customClass="ScheduleViewController" customModule="GallopNYC" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="kiP-IE-gym"/>
                         <viewControllerLayoutGuide type="bottom" id="IxJ-gJ-onn"/>
@@ -524,21 +548,127 @@ of people with disabilities</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Schedule" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I6N-0i-bBh">
-                                <rect key="frame" x="174" y="93" width="133" height="86"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.26055530999999998" green="0.56548592929999997" blue="0.12655440879999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D4t-I8-SxS">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kBI-mb-4Cf">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Volunteer" translatesAutoresizingMaskIntoConstraints="NO" id="Qi4-Jz-W7G">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="162"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Volunteering With GallopNYC Is Rewarding, Exciting, And Fun" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lp2-LU-3pS">
+                                                <rect key="frame" x="8" y="170" width="359" height="45"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q67-n4-AVH">
+                                                <rect key="frame" x="9" y="213" width="359" height="153"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <mutableString key="text">Volunteers enjoy the personal satisfaction of helping children and adults with developmental, emotional, social, and physical challenges, all while working with and being around horses, one of nature’s most empathetic animals. 
+We ask volunteers to commit to two hours of service a week.   Email us at volunteer@gallopnyc.org Call us on 646.233.4507.</mutableString>
+                                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="12"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ready to start? Sign up!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xGZ-BS-Tch">
+                                                <rect key="frame" x="8" y="374" width="359" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="13"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TvL-Ct-2lO">
+                                                <rect key="frame" x="8" y="393" width="360" height="84"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <string key="text">After you sign up, you’ll be offered a brief online orientation. After completing the orientation, you’ll be able to sign up for your first volunteer opportunity. On your first day, you’ll be asked to arrive a half hour early for onsite training from the instructor. </string>
+                                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="12"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="That’s it! Hope you’ll join us!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dZi-Ib-aor">
+                                                <rect key="frame" x="9" y="485" width="359" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="12"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dus-xp-i6K">
+                                                <rect key="frame" x="8" y="514" width="161" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.075020919369999994" green="0.28349712230000002" blue="0.74738219890000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="Sign Up Here">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="pressedSignUp:" destination="HL7-6e-Gbi" eventType="touchUpInside" id="nXh-A6-m5I"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Join our fun team of GallopNYC Volunteers!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jww-MG-FVv">
+                                                <rect key="frame" x="31" y="71" width="311" height="54"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Already Signed Up? " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ula-vY-1db">
+                                                <rect key="frame" x="9" y="561" width="359" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="13"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Find an Oppurtunity here!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8go-UM-IYz">
+                                                <rect key="frame" x="9" y="590" width="359" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="12"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="owx-k8-7F5">
+                                                <rect key="frame" x="9" y="619" width="160" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.075020919369999994" green="0.28349712230000002" blue="0.74738219890000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="Search Here">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="didPressSearch:" destination="HL7-6e-Gbi" eventType="touchUpInside" id="BR6-WD-MHl"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="667" id="A1X-55-FMo"/>
+                                            <constraint firstAttribute="width" constant="375" id="OXE-eK-isV"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="kBI-mb-4Cf" firstAttribute="leading" secondItem="D4t-I8-SxS" secondAttribute="leading" id="99f-qz-SGJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="kBI-mb-4Cf" secondAttribute="trailing" id="JI4-j8-Yn7"/>
+                                    <constraint firstItem="kBI-mb-4Cf" firstAttribute="top" secondItem="D4t-I8-SxS" secondAttribute="top" id="MaN-Ed-6JR"/>
+                                    <constraint firstAttribute="bottom" secondItem="kBI-mb-4Cf" secondAttribute="bottom" id="Rdc-Ao-yl3"/>
+                                    <constraint firstAttribute="width" constant="375" id="kvk-H8-qda"/>
+                                    <constraint firstAttribute="height" constant="667" id="ngR-Dk-VNF"/>
+                                </constraints>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="D4t-I8-SxS" firstAttribute="leading" secondItem="SAK-XO-kNR" secondAttribute="leading" id="1rO-h1-C47"/>
+                            <constraint firstItem="D4t-I8-SxS" firstAttribute="top" secondItem="SAK-XO-kNR" secondAttribute="top" id="Tjq-9h-9ho"/>
+                            <constraint firstItem="IxJ-gJ-onn" firstAttribute="top" secondItem="D4t-I8-SxS" secondAttribute="bottom" id="nSH-aP-kSi"/>
+                            <constraint firstAttribute="trailing" secondItem="D4t-I8-SxS" secondAttribute="trailing" id="oMa-Ph-v0s"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Hw-sQ-919" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="476" y="63"/>
+            <point key="canvasLocation" x="476" y="62.518740629685162"/>
         </scene>
         <!--Programs View Controller-->
         <scene sceneID="n1A-RR-4eW">
@@ -556,10 +686,10 @@ of people with disabilities</string>
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e2k-As-L8p">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1423"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1215"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="06" translatesAutoresizingMaskIntoConstraints="NO" id="KpO-EC-a0k">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="134"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Programs page" translatesAutoresizingMaskIntoConstraints="NO" id="KpO-EC-a0k">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="GallopNYC programs builds bonds between people and horses" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ng-Na-tHa">
@@ -576,74 +706,15 @@ of people with disabilities</string>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="A full 86% of parents surveyed agreed that GallopNYC helped their children engage more fully in life. Learn More" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bmr-et-prN">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="A full 86% of parents surveyed agreed that GallopNYC helped their children engage more fully in life. " textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bmr-et-prN">
                                                 <rect key="frame" x="8" y="180" width="359" height="49"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="12"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zwj-55-qTf">
-                                                <rect key="frame" x="8" y="237" width="353" height="86"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                        <real key="value" value="2"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                        <real key="value" value="4"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="INTERESTED IN RIDING?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uZx-0S-xg9">
-                                                <rect key="frame" x="16" y="245" width="221" height="21"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="14"/>
-                                                <color key="textColor" red="0.84107084422146594" green="0.29357378841115034" blue="0.038227681640340752" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pay Fees : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oky-z4-hwk">
-                                                <rect key="frame" x="8" y="331" width="128" height="30"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="15"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Current Riders can pay Tuition Fees HERE:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b5W-Et-DzD">
-                                                <rect key="frame" x="8" y="356" width="359" height="27"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="13"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="69B-fT-vcF">
-                                                <rect key="frame" x="8" y="391" width="90" height="30"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" red="0.94066999343612567" green="0.51059099544091913" blue="0.12333189655082015" alpha="1" colorSpace="calibratedRGB"/>
-                                                <fontDescription key="fontDescription" name="Verdana-BoldItalic" family="Verdana" pointSize="14"/>
-                                                <state key="normal" title="Pay Now">
-                                                    <color key="titleColor" red="0.075020919373095019" green="0.28349712225946716" blue="0.74738219893350788" alpha="1" colorSpace="calibratedRGB"/>
-                                                </state>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                        <real key="value" value="2"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                        <real key="value" value="7"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                            </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TtR-58-tbm">
-                                                <rect key="frame" x="8" y="441" width="359" height="259"/>
+                                                <rect key="frame" x="8" y="237" width="359" height="259"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
@@ -659,16 +730,9 @@ of people with disabilities</string>
                                                         <real key="value" value="4"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please fill out GallopNYC’s online inquiry form here. We will promptly send you more information." textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6J2-pF-tGa">
-                                                <rect key="frame" x="18" y="273" width="332" height="36"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="12"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Nx-JH-vPj">
-                                                <rect key="frame" x="8" y="719" width="358" height="235"/>
+                                                <rect key="frame" x="8" y="504" width="359" height="235"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
@@ -685,23 +749,15 @@ of people with disabilities</string>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bkh-kM-TXF">
-                                                <rect key="frame" x="27" y="750" width="321" height="86"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <string key="text">In Hippotherapy, a licensed physical therapist works with each child while the child is riding. The therapist is trained in using a horse as a physical therapy tool. The therapists work independently with GallopNYC’s assistance.</string>
-                                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="12"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="COMMUNITY RIDING PROGRAM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="06v-3n-UW4">
-                                                <rect key="frame" x="27" y="844" width="319" height="32"/>
+                                                <rect key="frame" x="27" y="630" width="319" height="32"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="14"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="daG-sv-Shd">
-                                                <rect key="frame" x="7" y="962" width="360" height="334"/>
+                                                <rect key="frame" x="8" y="747" width="353" height="347"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
@@ -718,29 +774,22 @@ of people with disabilities</string>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MS Program" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yyv-4J-tml">
-                                                <rect key="frame" x="29" y="1099" width="187" height="30"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="14"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="THERAPEUTIC RIDING" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="91D-7Q-s2o">
-                                                <rect key="frame" x="27" y="443" width="260" height="29"/>
+                                                <rect key="frame" x="27" y="239" width="260" height="29"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="14"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="HIPPOTHERAPY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hrl-RT-O6T">
-                                                <rect key="frame" x="27" y="721" width="292" height="33"/>
+                                                <rect key="frame" x="27" y="504" width="292" height="33"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="14"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JvV-mi-unB">
-                                                <rect key="frame" x="8" y="1304" width="358" height="113"/>
+                                                <rect key="frame" x="8" y="1102" width="359" height="105"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
@@ -757,19 +806,12 @@ of people with disabilities</string>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="VETERANS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wX8-8W-DQ7">
-                                                <rect key="frame" x="29" y="1306" width="276" height="21"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="14"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Reeve-Grant-diamond" translatesAutoresizingMaskIntoConstraints="NO" id="HX3-hi-2rc">
-                                                <rect key="frame" x="93" y="970" width="188" height="128"/>
+                                                <rect key="frame" x="93" y="762" width="188" height="128"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CgC-yL-mI4">
-                                                <rect key="frame" x="29" y="1137" width="320" height="148"/>
+                                                <rect key="frame" x="27" y="931" width="321" height="148"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <string key="text">GallopNYC is honored to receive a Christopher and Dana Reeve Quality of Life grant to support our therapeutic riding program for people with multiple sclerosis,  in partnership with the National Multiple Sclerosis Society’s New York City – Southern New York chapter.  
 
@@ -779,7 +821,7 @@ Our evaluations show measurable benefits to our riders – improving balance, co
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="16" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Odl-eZ-hml">
-                                                <rect key="frame" x="27" y="469" width="311" height="210"/>
+                                                <rect key="frame" x="27" y="269" width="319" height="210"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <string key="text">GallopNYC brings the proven benefits of therapeutic horsemanship to provide measurable benefits for people with developmental, emotional, social, and physical challenges. 
 
@@ -791,25 +833,47 @@ GallopNYC serves hundreds of riders every week at six NYC locations. GallopNYC i
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wo2-8y-3JE">
-                                                <rect key="frame" x="27" y="872" width="323" height="69"/>
+                                                <rect key="frame" x="27" y="661" width="319" height="69"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <string key="text">GallopNYC offers recreational riding at our Gemini Fields and Lynne’s Riding School locations. Lessons are open to all, including people with and without disabilities. </string>
                                                 <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="12"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bkh-kM-TXF">
+                                                <rect key="frame" x="27" y="536" width="321" height="86"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <string key="text">In Hippotherapy, a licensed physical therapist works with each child while the child is riding. The therapist is trained in using a horse as a physical therapy tool. The therapists work independently with GallopNYC’s assistance.</string>
+                                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="12"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MS Program" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yyv-4J-tml">
+                                                <rect key="frame" x="27" y="898" width="187" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Awm-fX-A1h">
-                                                <rect key="frame" x="29" y="1335" width="320" height="68"/>
+                                                <rect key="frame" x="27" y="1133" width="321" height="68"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <string key="text">A leadership program for war veterans with visible and/or invisible injuries, designed to build competence, confidence and leadership. </string>
                                                 <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="12"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="VETERANS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wX8-8W-DQ7">
+                                                <rect key="frame" x="27" y="1112" width="276" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="1423" id="Dgv-D1-lpf"/>
+                                            <constraint firstAttribute="height" constant="1215" id="Dgv-D1-lpf"/>
                                             <constraint firstAttribute="width" constant="375" id="SJR-FB-A8m"/>
                                         </constraints>
                                     </view>
@@ -853,10 +917,10 @@ GallopNYC serves hundreds of riders every week at six NYC locations. GallopNYC i
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Am9-pk-3cx">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1030"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="982"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Grooming-300x199" translatesAutoresizingMaskIntoConstraints="NO" id="bOS-4b-NL2">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="199"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Contact us" translatesAutoresizingMaskIntoConstraints="NO" id="bOS-4b-NL2">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="163"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Get in touch with us" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oiv-yz-7XJ">
@@ -867,21 +931,21 @@ GallopNYC serves hundreds of riders every week at six NYC locations. GallopNYC i
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Contact Info:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qeP-QT-3nR">
-                                                <rect key="frame" x="8" y="219" width="119" height="27"/>
+                                                <rect key="frame" x="8" y="185" width="119" height="27"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="14"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Locations" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6OX-hk-qt1">
-                                                <rect key="frame" x="8" y="444" width="333" height="21"/>
+                                                <rect key="frame" x="8" y="409" width="333" height="21"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="14"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nbO-gi-lRP">
-                                                <rect key="frame" x="8" y="526" width="170" height="151"/>
+                                                <rect key="frame" x="8" y="483" width="170" height="151"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zur-I1-Tis">
@@ -931,7 +995,7 @@ Queens NY 11414</string>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PDS-3c-cU1">
-                                                <rect key="frame" x="8" y="670" width="170" height="166"/>
+                                                <rect key="frame" x="8" y="642" width="170" height="166"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ytD-Rz-3Pj">
@@ -981,59 +1045,8 @@ Brooklyn NY</string>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
-                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Hl-c3-KQo">
-                                                <rect key="frame" x="8" y="830" width="170" height="166"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FoO-YC-0S4">
-                                                        <rect key="frame" x="8" y="8" width="154" height="118"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <string key="text">GallopNYC (Pelham Bay Park, The Bronx)
-Bronx Equestrian Center
-9 Shore Rd. The Bronx, 
-NY 10464-1007
-(718) 855-0551</string>
-                                                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="13"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T1R-mI-IYN">
-                                                        <rect key="frame" x="43" y="125" width="85" height="30"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <state key="normal" title="Directions">
-                                                            <color key="titleColor" red="0.94066999340000002" green="0.51059099539999997" blue="0.1233318966" alpha="1" colorSpace="calibratedRGB"/>
-                                                        </state>
-                                                        <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                                <real key="value" value="1"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                                <real key="value" value="4"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                                <color key="value" red="0.94066999340000002" green="0.51059099539999997" blue="0.1233318966" alpha="1" colorSpace="calibratedRGB"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                        </userDefinedRuntimeAttributes>
-                                                        <connections>
-                                                            <action selector="pelhamBayMapPress:" destination="wPu-Ex-Qjm" eventType="touchUpInside" id="jui-rk-4Zx"/>
-                                                        </connections>
-                                                    </button>
-                                                </subviews>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                        <real key="value" value="2"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                        <real key="value" value="4"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                            </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yjf-12-xY9">
-                                                <rect key="frame" x="8" y="254" width="351" height="164"/>
+                                                <rect key="frame" x="8" y="220" width="351" height="181"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <string key="text">GallopNYC 
 Giving Alternative Learners UpLifting Opportunities, Inc. 
@@ -1048,15 +1061,8 @@ Phone: 646-233-4507 (leave message) </string>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="GallopNYC offers lessons at six NYC locations, four in NYC Parks." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BNt-8p-ECX">
-                                                <rect key="frame" x="8" y="473" width="351" height="45"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="13"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g3O-ch-VgD">
-                                                <rect key="frame" x="174" y="526" width="182" height="151"/>
+                                                <rect key="frame" x="185" y="483" width="182" height="151"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="39W-KS-KY0">
@@ -1107,7 +1113,7 @@ NY 11375
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9qW-JA-ZJh">
-                                                <rect key="frame" x="174" y="670" width="182" height="166"/>
+                                                <rect key="frame" x="185" y="642" width="182" height="166"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O8X-mM-vCt">
@@ -1158,7 +1164,7 @@ Brooklyn, NY 11234
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RQN-bR-0bB">
-                                                <rect key="frame" x="174" y="830" width="182" height="166"/>
+                                                <rect key="frame" x="185" y="816" width="182" height="166"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N86-12-Rmj">
@@ -1208,10 +1214,68 @@ The Bronx, NY 10471
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="GallopNYC offers lessons at six NYC locations, four in NYC Parks." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BNt-8p-ECX">
+                                                <rect key="frame" x="8" y="430" width="351" height="45"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="13"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Hl-c3-KQo">
+                                                <rect key="frame" x="8" y="816" width="170" height="166"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FoO-YC-0S4">
+                                                        <rect key="frame" x="8" y="8" width="154" height="118"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <string key="text">GallopNYC (Pelham Bay Park, The Bronx)
+Bronx Equestrian Center
+9 Shore Rd. The Bronx, 
+NY 10464-1007
+(718) 855-0551</string>
+                                                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="13"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T1R-mI-IYN">
+                                                        <rect key="frame" x="43" y="125" width="85" height="30"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <state key="normal" title="Directions">
+                                                            <color key="titleColor" red="0.94066999340000002" green="0.51059099539999997" blue="0.1233318966" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="1"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="4"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" red="0.94066999340000002" green="0.51059099539999997" blue="0.1233318966" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="pelhamBayMapPress:" destination="wPu-Ex-Qjm" eventType="touchUpInside" id="jui-rk-4Zx"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="1030" id="6bh-5Z-8OQ"/>
+                                            <constraint firstAttribute="height" constant="982" id="6bh-5Z-8OQ"/>
                                             <constraint firstAttribute="width" constant="375" id="UtG-nI-Ghu"/>
                                         </constraints>
                                     </view>
@@ -1242,14 +1306,15 @@ The Bronx, NY 10471
         </scene>
     </scenes>
     <resources>
-        <image name="06" width="906" height="390"/>
+        <image name="Contact us" width="4011" height="2674"/>
+        <image name="Donate Page" width="4256" height="2832"/>
         <image name="Gallop logo_new" width="250" height="250"/>
-        <image name="Grooming-300x199" width="300" height="199"/>
         <image name="Guidestar-logo-" width="166" height="122"/>
+        <image name="Home page" width="5184" height="3456"/>
         <image name="More_btn" width="14" height="24"/>
+        <image name="Programs page" width="3000" height="2163"/>
         <image name="Reeve-Grant-diamond" width="850" height="850"/>
-        <image name="blur_img_Donate" width="270" height="100"/>
+        <image name="Volunteer" width="5472" height="3648"/>
         <image name="new-donate-button-4" width="240" height="160"/>
-        <image name="programs-slide-1-1024x590" width="1024" height="590"/>
     </resources>
 </document>

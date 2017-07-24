@@ -14,6 +14,15 @@
 		944FCC041E54D53B0006819E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 944FCC021E54D53B0006819E /* Main.storyboard */; };
 		94786CB31EEE09F1004534D3 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 94786CB21EEE09F1004534D3 /* Podfile */; };
 		94786CB71EF1E623004534D3 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94786CB61EF1E623004534D3 /* MapKit.framework */; };
+		94786CC11EF98BB3004534D3 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94786CB81EF98BB3004534D3 /* Accelerate.framework */; };
+		94786CC21EF98BB3004534D3 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94786CB91EF98BB3004534D3 /* AudioToolbox.framework */; };
+		94786CC31EF98BB3004534D3 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94786CBA1EF98BB3004534D3 /* AVFoundation.framework */; };
+		94786CC41EF98BB3004534D3 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94786CBB1EF98BB3004534D3 /* CoreLocation.framework */; };
+		94786CC51EF98BB3004534D3 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94786CBC1EF98BB3004534D3 /* CoreMedia.framework */; };
+		94786CC61EF98BB3004534D3 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94786CBD1EF98BB3004534D3 /* MessageUI.framework */; };
+		94786CC71EF98BB3004534D3 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94786CBE1EF98BB3004534D3 /* MobileCoreServices.framework */; };
+		94786CC81EF98BB3004534D3 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94786CBF1EF98BB3004534D3 /* SafariServices.framework */; };
+		94786CC91EF98BB3004534D3 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94786CC01EF98BB3004534D3 /* SystemConfiguration.framework */; };
 		94D2ACBF1E4792E700834D29 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D2ACBE1E4792E700834D29 /* AppDelegate.swift */; };
 		94D2ACC11E4792E700834D29 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D2ACC01E4792E700834D29 /* HomeViewController.swift */; };
 		94D2ACC61E4792E700834D29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94D2ACC51E4792E700834D29 /* Assets.xcassets */; };
@@ -28,8 +37,18 @@
 		944FCBFE1E54C1210006819E /* ProgramsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgramsViewController.swift; sourceTree = "<group>"; };
 		944FCC001E54C1450006819E /* ContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		944FCC031E54D53B0006819E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		94786CB21EEE09F1004534D3 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		94786CB21EEE09F1004534D3 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		94786CB61EF1E623004534D3 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		94786CB81EF98BB3004534D3 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		94786CB91EF98BB3004534D3 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		94786CBA1EF98BB3004534D3 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		94786CBB1EF98BB3004534D3 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		94786CBC1EF98BB3004534D3 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		94786CBD1EF98BB3004534D3 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		94786CBE1EF98BB3004534D3 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		94786CBF1EF98BB3004534D3 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
+		94786CC01EF98BB3004534D3 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		94786CCA1EF98D70004534D3 /* GallopNYC-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GallopNYC-Bridging-Header.h"; sourceTree = "<group>"; };
 		94D2ACBB1E4792E700834D29 /* GallopNYC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GallopNYC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94D2ACBE1E4792E700834D29 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		94D2ACC01E4792E700834D29 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +66,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94786CC11EF98BB3004534D3 /* Accelerate.framework in Frameworks */,
+				94786CC21EF98BB3004534D3 /* AudioToolbox.framework in Frameworks */,
+				94786CC31EF98BB3004534D3 /* AVFoundation.framework in Frameworks */,
+				94786CC41EF98BB3004534D3 /* CoreLocation.framework in Frameworks */,
+				94786CC51EF98BB3004534D3 /* CoreMedia.framework in Frameworks */,
+				94786CC61EF98BB3004534D3 /* MessageUI.framework in Frameworks */,
+				94786CC71EF98BB3004534D3 /* MobileCoreServices.framework in Frameworks */,
+				94786CC81EF98BB3004534D3 /* SafariServices.framework in Frameworks */,
+				94786CC91EF98BB3004534D3 /* SystemConfiguration.framework in Frameworks */,
 				94786CB71EF1E623004534D3 /* MapKit.framework in Frameworks */,
 				25BC4AE892100ADFDC26ABB1 /* libPods-GallopNYC.a in Frameworks */,
 			);
@@ -67,6 +95,15 @@
 		6A6F54AA926F80123DBACC8F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				94786CB81EF98BB3004534D3 /* Accelerate.framework */,
+				94786CB91EF98BB3004534D3 /* AudioToolbox.framework */,
+				94786CBA1EF98BB3004534D3 /* AVFoundation.framework */,
+				94786CBB1EF98BB3004534D3 /* CoreLocation.framework */,
+				94786CBC1EF98BB3004534D3 /* CoreMedia.framework */,
+				94786CBD1EF98BB3004534D3 /* MessageUI.framework */,
+				94786CBE1EF98BB3004534D3 /* MobileCoreServices.framework */,
+				94786CBF1EF98BB3004534D3 /* SafariServices.framework */,
+				94786CC01EF98BB3004534D3 /* SystemConfiguration.framework */,
 				94786CB61EF1E623004534D3 /* MapKit.framework */,
 				B69EE0D820C30D5EA6FCEF5A /* libPods-GallopNYC.a */,
 			);
@@ -106,6 +143,7 @@
 				94D2ACC51E4792E700834D29 /* Assets.xcassets */,
 				94D2ACC71E4792E700834D29 /* LaunchScreen.storyboard */,
 				94D2ACCA1E4792E700834D29 /* Info.plist */,
+				94786CCA1EF98D70004534D3 /* GallopNYC-Bridging-Header.h */,
 			);
 			path = GallopNYC;
 			sourceTree = "<group>";
@@ -145,10 +183,11 @@
 				TargetAttributes = {
 					94D2ACBA1E4792E700834D29 = {
 						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Maps.iOS = {
-								enabled = 1;
+								enabled = 0;
 							};
 						};
 					};
@@ -370,13 +409,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = GallopNYC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gallop.GallopNYC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GallopNYC/GallopNYC-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -386,13 +428,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = GallopNYC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gallop.GallopNYC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GallopNYC/GallopNYC-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

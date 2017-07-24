@@ -15,7 +15,7 @@ class TabViewController: UIViewController {
     @IBOutlet var menuButtons: [UIButton]!
     
     var homeViewController: UIViewController!
-    var scheduleViewController: UIViewController!
+    var volunteerViewController: UIViewController!
     var donateViewController: UIViewController!
     var programsViewController: UIViewController!
     var contactViewController: UIViewController!
@@ -27,12 +27,12 @@ class TabViewController: UIViewController {
     override func viewDidLoad() {
         let storyboard = UIStoryboard(name:"Main" , bundle: nil)
         homeViewController = storyboard.instantiateViewController(withIdentifier: "HomeScene")
-        scheduleViewController = storyboard.instantiateViewController(withIdentifier: "ScheduleScene")
+        volunteerViewController = storyboard.instantiateViewController(withIdentifier: "VolunteerScene")
         donateViewController = storyboard.instantiateViewController(withIdentifier: "DonateScene")
         programsViewController = storyboard.instantiateViewController(withIdentifier: "ProgramsScene")
         contactViewController = storyboard.instantiateViewController(withIdentifier: "ContactScene")
         
-        allViewControllers = [homeViewController,scheduleViewController,donateViewController,programsViewController,contactViewController]
+        allViewControllers = [homeViewController,volunteerViewController,donateViewController,programsViewController,contactViewController]
         
         menuButtons[selectedMenuItem].isSelected = true
         didPressMenu(menuButtons[selectedMenuItem])

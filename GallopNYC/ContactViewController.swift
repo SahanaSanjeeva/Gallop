@@ -16,19 +16,19 @@ class ContactViewController: UIViewController {
     }
  
     @IBAction func sunriseMapPress(_ sender: UIButton) {
-        directionButtonPress(coordinate: CLLocationCoordinate2DMake(40.671287, -73.851157), nameTag: "Gallop Sunrise Stables")
+        directionButtonPress(coordinate: CLLocationCoordinate2DMake(40.671080, -73.851160), nameTag: "Gallop Sunrise Stables")
     }
     
     @IBAction func forestHillsMapPress(_ sender: UIButton) {
-        directionButtonPress(coordinate: CLLocationCoordinate2DMake(40.708390, -73.853800), nameTag: "Gallop Forest Hills")
+        directionButtonPress(coordinate: CLLocationCoordinate2DMake(40.708190, -73.853800), nameTag: "Gallop Forest Hills")
     }
     
     @IBAction func prospectMapPress(_ sender: UIButton) {
-        directionButtonPress(coordinate: CLLocationCoordinate2DMake(40.648712, -73.971300), nameTag: "Gallop Prospect Park")
+        directionButtonPress(coordinate: CLLocationCoordinate2DMake(40.648688, -73.971310), nameTag: "Gallop Prospect Park")
     }
     
     @IBAction func jamaicaBayMapPress(_ sender: UIButton) {
-        directionButtonPress(coordinate: CLLocationCoordinate2DMake(40.607770, -73.897262), nameTag: "Gallop Jamaica Bay")
+        directionButtonPress(coordinate: CLLocationCoordinate2DMake(40.607533, -73.897240), nameTag: "Gallop Jamaica Bay")
     }
     
     @IBAction func pelhamBayMapPress(_ sender: UIButton) {
@@ -36,7 +36,7 @@ class ContactViewController: UIViewController {
     }
     
     @IBAction func vanCprtlandMapPress(_ sender: UIButton) {
-        directionButtonPress(coordinate: CLLocationCoordinate2DMake(40.902000, -73.894037), nameTag: "Gallop Van Cortland Park")
+        directionButtonPress(coordinate: CLLocationCoordinate2DMake(40.902394, -73.894286), nameTag: "Gallop Van Cortland Park")
     }
     
     func directionButtonPress(coordinate: CLLocationCoordinate2D, nameTag: String) {

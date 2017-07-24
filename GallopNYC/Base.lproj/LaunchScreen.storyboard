@@ -22,7 +22,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="GALLOP_TAG_ORNG_PMS copy" translatesAutoresizingMaskIntoConstraints="NO" id="14F-vT-xeH">
-                                <rect key="frame" x="0.0" y="0.0" width="377" height="673"/>
+                                <rect key="frame" x="16" y="168" width="343" height="330"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
