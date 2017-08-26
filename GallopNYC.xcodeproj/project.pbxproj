@@ -23,11 +23,14 @@
 		94786CC71EF98BB3004534D3 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94786CBE1EF98BB3004534D3 /* MobileCoreServices.framework */; };
 		94786CC81EF98BB3004534D3 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94786CBF1EF98BB3004534D3 /* SafariServices.framework */; };
 		94786CC91EF98BB3004534D3 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94786CC01EF98BB3004534D3 /* SystemConfiguration.framework */; };
+		94786CCE1F322D5A004534D3 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94786CCD1F322D5A004534D3 /* ScheduleViewController.swift */; };
+		94786CD01F322DA1004534D3 /* StatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94786CCF1F322DA1004534D3 /* StatusViewController.swift */; };
+		94786CD51F3E5C53004534D3 /* statusdatasource.txt in Resources */ = {isa = PBXBuildFile; fileRef = 94786CD41F3E5C53004534D3 /* statusdatasource.txt */; };
 		94D2ACBF1E4792E700834D29 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D2ACBE1E4792E700834D29 /* AppDelegate.swift */; };
 		94D2ACC11E4792E700834D29 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D2ACC01E4792E700834D29 /* HomeViewController.swift */; };
 		94D2ACC61E4792E700834D29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94D2ACC51E4792E700834D29 /* Assets.xcassets */; };
 		94D2ACC91E4792E700834D29 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94D2ACC71E4792E700834D29 /* LaunchScreen.storyboard */; };
-		94D2ACFB1E4E684A00834D29 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D2ACFA1E4E684A00834D29 /* ScheduleViewController.swift */; };
+		94D2ACFB1E4E684A00834D29 /* VolunteerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D2ACFA1E4E684A00834D29 /* VolunteerViewController.swift */; };
 		94D2ACFD1E5379C300834D29 /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D2ACFC1E5379C300834D29 /* TabViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -49,13 +52,16 @@
 		94786CBF1EF98BB3004534D3 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
 		94786CC01EF98BB3004534D3 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		94786CCA1EF98D70004534D3 /* GallopNYC-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GallopNYC-Bridging-Header.h"; sourceTree = "<group>"; };
+		94786CCD1F322D5A004534D3 /* ScheduleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
+		94786CCF1F322DA1004534D3 /* StatusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusViewController.swift; sourceTree = "<group>"; };
+		94786CD41F3E5C53004534D3 /* statusdatasource.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = statusdatasource.txt; sourceTree = "<group>"; };
 		94D2ACBB1E4792E700834D29 /* GallopNYC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GallopNYC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94D2ACBE1E4792E700834D29 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		94D2ACC01E4792E700834D29 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		94D2ACC51E4792E700834D29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		94D2ACC81E4792E700834D29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		94D2ACCA1E4792E700834D29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		94D2ACFA1E4E684A00834D29 /* ScheduleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
+		94D2ACFA1E4E684A00834D29 /* VolunteerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VolunteerViewController.swift; sourceTree = "<group>"; };
 		94D2ACFC1E5379C300834D29 /* TabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
 		B69EE0D820C30D5EA6FCEF5A /* libPods-GallopNYC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GallopNYC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F38A61C65636E19BCFDA8B65 /* Pods-GallopNYC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GallopNYC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GallopNYC/Pods-GallopNYC.debug.xcconfig"; sourceTree = "<group>"; };
@@ -114,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				94786CB21EEE09F1004534D3 /* Podfile */,
+				94786CD41F3E5C53004534D3 /* statusdatasource.txt */,
 				94D2ACBD1E4792E700834D29 /* GallopNYC */,
 				94D2ACBC1E4792E700834D29 /* Products */,
 				2A8725DD253E7D05B940864D /* Pods */,
@@ -135,9 +142,11 @@
 				94D2ACBE1E4792E700834D29 /* AppDelegate.swift */,
 				94D2ACFC1E5379C300834D29 /* TabViewController.swift */,
 				94D2ACC01E4792E700834D29 /* HomeViewController.swift */,
-				94D2ACFA1E4E684A00834D29 /* ScheduleViewController.swift */,
-				944FCBFE1E54C1210006819E /* ProgramsViewController.swift */,
+				94D2ACFA1E4E684A00834D29 /* VolunteerViewController.swift */,
+				94786CCD1F322D5A004534D3 /* ScheduleViewController.swift */,
 				944FCBFC1E54C0B50006819E /* DonateViewController.swift */,
+				944FCBFE1E54C1210006819E /* ProgramsViewController.swift */,
+				94786CCF1F322DA1004534D3 /* StatusViewController.swift */,
 				944FCC001E54C1450006819E /* ContactViewController.swift */,
 				944FCC021E54D53B0006819E /* Main.storyboard */,
 				94D2ACC51E4792E700834D29 /* Assets.xcassets */,
@@ -218,6 +227,7 @@
 			files = (
 				944FCC041E54D53B0006819E /* Main.storyboard in Resources */,
 				94D2ACC91E4792E700834D29 /* LaunchScreen.storyboard in Resources */,
+				94786CD51F3E5C53004534D3 /* statusdatasource.txt in Resources */,
 				94786CB31EEE09F1004534D3 /* Podfile in Resources */,
 				94D2ACC61E4792E700834D29 /* Assets.xcassets in Resources */,
 			);
@@ -280,10 +290,12 @@
 			files = (
 				94D2ACFD1E5379C300834D29 /* TabViewController.swift in Sources */,
 				944FCC011E54C1450006819E /* ContactViewController.swift in Sources */,
-				94D2ACFB1E4E684A00834D29 /* ScheduleViewController.swift in Sources */,
+				94D2ACFB1E4E684A00834D29 /* VolunteerViewController.swift in Sources */,
+				94786CCE1F322D5A004534D3 /* ScheduleViewController.swift in Sources */,
 				94D2ACC11E4792E700834D29 /* HomeViewController.swift in Sources */,
 				94D2ACBF1E4792E700834D29 /* AppDelegate.swift in Sources */,
 				944FCBFD1E54C0B50006819E /* DonateViewController.swift in Sources */,
+				94786CD01F322DA1004534D3 /* StatusViewController.swift in Sources */,
 				944FCBFF1E54C1210006819E /* ProgramsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

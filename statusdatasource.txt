@@ -1,0 +1,5 @@
+Class1,yes
+class2,no
+class3,yes
+class4,yes
+class5,no

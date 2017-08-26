@@ -10,9 +10,13 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
+    @IBOutlet var headerImage: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //headerImage.clipsToBounds = YESSTR
+        //headerImage.contentMode = .scaleAspectFit
     }
 
     override func didReceiveMemoryWarning() {
