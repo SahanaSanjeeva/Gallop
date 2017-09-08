@@ -1,13 +1,12 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="RCl-KT-1IN">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="RCl-KT-1IN">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
-        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -293,7 +292,7 @@ Every gift goes directly to provide lessons to children who never have the oppor
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hPO-vQ-1Iv">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="91"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qrh-Ut-SnB">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
@@ -307,241 +306,234 @@ Every gift goes directly to provide lessons to children who never have the oppor
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WIF-oZ-owF">
-                                        <rect key="frame" x="0.0" y="65" width="375" height="35"/>
+                                        <rect key="frame" x="0.0" y="255" width="0.0" height="0.0"/>
                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="35.5" id="Q2y-om-FsG"/>
-                                            <constraint firstAttribute="width" constant="375" id="UzP-3A-fnJ"/>
-                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
+                                        <size key="shadowOffset" width="0.0" height="0.0"/>
                                     </label>
-                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qcb-ZT-raL">
-                                        <rect key="frame" x="41" y="70" width="64" height="26"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="64" id="N6b-zP-T9u"/>
-                                            <constraint firstAttribute="height" constant="26" id="Y1z-1X-h3L"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="9"/>
-                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <state key="normal" title="VOLUNTEER">
-                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <state key="selected" title="VOLUNTEER">
-                                            <color key="titleColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                <real key="value" value="0.0"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="0.0"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="didPressMenu:" destination="RCl-KT-1IN" eventType="touchUpInside" id="1P7-sx-26G"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aeP-2c-d9s">
-                                        <rect key="frame" x="249" y="70" width="68" height="26"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="26" id="2oJ-W4-TQM"/>
-                                            <constraint firstAttribute="width" constant="68" id="MRH-ow-SZx"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="9"/>
-                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <state key="normal" title="PROGRAMS">
-                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <state key="selected" title="PROGRAMS">
-                                            <color key="titleColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                        </state>
-                                        <state key="highlighted" title="PROGRAMS"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                <real key="value" value="0.0"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="0.0"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="didPressMenu:" destination="RCl-KT-1IN" eventType="touchUpInside" id="9e0-Up-QcV"/>
-                                        </connections>
-                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" layoutMarginsFollowReadableWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UxK-0A-WKe">
+                                        <rect key="frame" x="0.0" y="65" width="375" height="26"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D1D-cm-fjz">
+                                                <rect key="frame" x="0.0" y="0.0" width="35" height="26"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="35" id="h13-F1-5jB"/>
+                                                    <constraint firstAttribute="height" constant="26" id="rjh-1k-4Y3"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="9"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <state key="normal" title="HOME">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <state key="selected" title="HOME">
+                                                    <color key="titleColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="didPressMenu:" destination="RCl-KT-1IN" eventType="touchUpInside" id="win-qr-CFe"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qcb-ZT-raL">
+                                                <rect key="frame" x="35" y="0.0" width="64" height="26"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="64" id="N6b-zP-T9u"/>
+                                                    <constraint firstAttribute="height" constant="26" id="Y1z-1X-h3L"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="9"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <state key="normal" title="VOLUNTEER">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <state key="selected" title="VOLUNTEER">
+                                                    <color key="titleColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="didPressMenu:" destination="RCl-KT-1IN" eventType="touchUpInside" id="1P7-sx-26G"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mrd-VV-o3o">
+                                                <rect key="frame" x="99" y="0.0" width="63" height="26"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="63" id="lIo-ty-UcT"/>
+                                                    <constraint firstAttribute="height" constant="26" id="pYA-2f-pSM"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="9"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <state key="normal" title="SCHEDULE">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <state key="selected" title="SCHEDULE">
+                                                    <color key="titleColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="didPressMenu:" destination="RCl-KT-1IN" eventType="touchUpInside" id="8ff-c1-NsA"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Btc-ul-Fxp">
+                                                <rect key="frame" x="162" y="0.0" width="15" height="26"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="15" id="rTy-9y-ubs"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <state key="normal" title="▼">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <state key="selected" title="▲">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="dropDownPressed:" destination="RCl-KT-1IN" eventType="touchUpInside" id="ljH-Hy-vtD"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fea-lH-Nvd">
+                                                <rect key="frame" x="177" y="0.0" width="49" height="26"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="49" id="TdX-MZ-DIb"/>
+                                                    <constraint firstAttribute="height" constant="26" id="eRO-Re-m25"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="9"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <state key="normal" title="DONATE">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <state key="selected" title="DONATE">
+                                                    <color key="titleColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="didPressMenu:" destination="RCl-KT-1IN" eventType="touchUpInside" id="rt9-uf-Rpx"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aeP-2c-d9s">
+                                                <rect key="frame" x="226" y="0.0" width="96" height="26"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="26" id="2oJ-W4-TQM"/>
+                                                    <constraint firstAttribute="width" constant="68" id="MRH-ow-SZx"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="9"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <state key="normal" title="PROGRAMS">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <state key="selected" title="PROGRAMS">
+                                                    <color key="titleColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                </state>
+                                                <state key="highlighted" title="PROGRAMS"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="didPressMenu:" destination="RCl-KT-1IN" eventType="touchUpInside" id="9e0-Up-QcV"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Xx-r3-bfh">
+                                                <rect key="frame" x="322" y="0.0" width="53" height="26"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="26" id="NUL-51-Ll1"/>
+                                                    <constraint firstAttribute="width" constant="53" id="RTP-XO-AlY"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="9"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <state key="normal" title="CONTACT">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <state key="selected" title="CONTACT">
+                                                    <color key="titleColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="didPressMenu:" destination="RCl-KT-1IN" eventType="touchUpInside" id="ygf-fv-riD"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    </stackView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Gallop logo_new" translatesAutoresizingMaskIntoConstraints="NO" id="tR8-oS-Tis">
-                                        <rect key="frame" x="8" y="0.0" width="61" height="60"/>
+                                        <rect key="frame" x="8" y="0.0" width="61" height="57"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="61" id="Lsg-kK-xn9"/>
                                         </constraints>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D1D-cm-fjz">
-                                        <rect key="frame" x="0.0" y="70" width="35" height="26"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="35" id="pdQ-we-X37"/>
-                                            <constraint firstAttribute="height" constant="26" id="rjh-1k-4Y3"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="9"/>
-                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <state key="normal" title="HOME">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <state key="selected" title="HOME">
-                                            <color key="titleColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                <real key="value" value="0.0"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="0.0"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="didPressMenu:" destination="RCl-KT-1IN" eventType="touchUpInside" id="win-qr-CFe"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fea-lH-Nvd">
-                                        <rect key="frame" x="197" y="70" width="49" height="26"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="49" id="TdX-MZ-DIb"/>
-                                            <constraint firstAttribute="height" constant="26" id="eRO-Re-m25"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="9"/>
-                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <state key="normal" title="DONATE">
-                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <state key="selected" title="DONATE">
-                                            <color key="titleColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                <real key="value" value="0.0"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="0.0"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="didPressMenu:" destination="RCl-KT-1IN" eventType="touchUpInside" id="rt9-uf-Rpx"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Xx-r3-bfh">
-                                        <rect key="frame" x="322" y="70" width="53" height="26"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="26" id="NUL-51-Ll1"/>
-                                            <constraint firstAttribute="width" constant="53" id="RTP-XO-AlY"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="9"/>
-                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <state key="normal" title="CONTACT">
-                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <state key="selected" title="CONTACT">
-                                            <color key="titleColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                <real key="value" value="0.0"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="0.0"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="didPressMenu:" destination="RCl-KT-1IN" eventType="touchUpInside" id="ygf-fv-riD"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mrd-VV-o3o">
-                                        <rect key="frame" x="113" y="70" width="63" height="26"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="63" id="lIo-ty-UcT"/>
-                                            <constraint firstAttribute="height" constant="26" id="pYA-2f-pSM"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="9"/>
-                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <state key="normal" title="SCHEDULE">
-                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <state key="selected" title="SCHEDULE">
-                                            <color key="titleColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                <real key="value" value="0.0"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="0.0"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="didPressMenu:" destination="RCl-KT-1IN" eventType="touchUpInside" id="8ff-c1-NsA"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Btc-ul-Fxp">
-                                        <rect key="frame" x="172" y="70" width="21" height="26"/>
-                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        <state key="normal" title="▼">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <state key="selected" title="▲">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="dropDownPressed:" destination="RCl-KT-1IN" eventType="touchUpInside" id="ljH-Hy-vtD"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstItem="fea-lH-Nvd" firstAttribute="firstBaseline" secondItem="aeP-2c-d9s" secondAttribute="baseline" id="09D-s9-O4i"/>
-                                    <constraint firstAttribute="bottom" secondItem="WIF-oZ-owF" secondAttribute="bottom" constant="0.5" id="0TW-qR-INu"/>
-                                    <constraint firstItem="Btc-ul-Fxp" firstAttribute="firstBaseline" secondItem="fea-lH-Nvd" secondAttribute="baseline" id="0tJ-SJ-gve"/>
                                     <constraint firstAttribute="trailing" secondItem="Qrh-Ut-SnB" secondAttribute="trailing" id="5rh-6t-Fy7"/>
-                                    <constraint firstItem="WIF-oZ-owF" firstAttribute="top" secondItem="Qrh-Ut-SnB" secondAttribute="bottom" constant="-0.5" id="7yR-hB-ny0"/>
-                                    <constraint firstItem="WIF-oZ-owF" firstAttribute="leading" secondItem="hPO-vQ-1Iv" secondAttribute="leading" id="DZo-RU-1VP"/>
-                                    <constraint firstItem="aeP-2c-d9s" firstAttribute="baseline" secondItem="D1D-cm-fjz" secondAttribute="baseline" id="GRJ-dH-G9s"/>
-                                    <constraint firstItem="Btc-ul-Fxp" firstAttribute="leading" secondItem="Mrd-VV-o3o" secondAttribute="trailing" constant="-4" id="KsQ-fj-aR1"/>
+                                    <constraint firstItem="WIF-oZ-owF" firstAttribute="leading" secondItem="Qrh-Ut-SnB" secondAttribute="leading" id="7kb-2d-MjO"/>
+                                    <constraint firstItem="UxK-0A-WKe" firstAttribute="top" secondItem="Qrh-Ut-SnB" secondAttribute="bottom" id="Cdz-dy-M0N"/>
                                     <constraint firstItem="Qrh-Ut-SnB" firstAttribute="top" secondItem="hPO-vQ-1Iv" secondAttribute="top" id="LNP-1z-N7m"/>
-                                    <constraint firstItem="Mrd-VV-o3o" firstAttribute="leading" secondItem="qcb-ZT-raL" secondAttribute="trailing" constant="8" id="S0O-Sh-LFa"/>
-                                    <constraint firstItem="Btc-ul-Fxp" firstAttribute="baseline" secondItem="aeP-2c-d9s" secondAttribute="baseline" id="Shr-ra-0Qq"/>
-                                    <constraint firstItem="D1D-cm-fjz" firstAttribute="top" secondItem="Qrh-Ut-SnB" secondAttribute="bottom" constant="5" id="T8y-3F-Owb"/>
-                                    <constraint firstItem="WIF-oZ-owF" firstAttribute="top" secondItem="tR8-oS-Tis" secondAttribute="bottom" constant="4.5" id="XFK-hm-ii0"/>
-                                    <constraint firstItem="Mrd-VV-o3o" firstAttribute="baseline" secondItem="fea-lH-Nvd" secondAttribute="baseline" id="ZHG-v0-Vdh"/>
-                                    <constraint firstItem="Qrh-Ut-SnB" firstAttribute="trailing" secondItem="6Xx-r3-bfh" secondAttribute="trailing" id="a19-oE-fS6"/>
-                                    <constraint firstItem="Btc-ul-Fxp" firstAttribute="top" secondItem="fea-lH-Nvd" secondAttribute="top" id="cOD-qL-08U"/>
-                                    <constraint firstItem="Qrh-Ut-SnB" firstAttribute="leading" secondItem="WIF-oZ-owF" secondAttribute="leading" id="d0s-xm-Lc5"/>
+                                    <constraint firstItem="UxK-0A-WKe" firstAttribute="centerX" secondItem="hPO-vQ-1Iv" secondAttribute="centerX" id="VAl-ex-Fhx"/>
+                                    <constraint firstAttribute="bottom" secondItem="UxK-0A-WKe" secondAttribute="bottom" id="Vyj-nB-u2R"/>
+                                    <constraint firstAttribute="bottom" secondItem="UxK-0A-WKe" secondAttribute="bottom" id="ZT3-N3-vvk"/>
+                                    <constraint firstItem="WIF-oZ-owF" firstAttribute="top" secondItem="hPO-vQ-1Iv" secondAttribute="top" constant="255" id="c8H-Fz-LXc"/>
                                     <constraint firstItem="Qrh-Ut-SnB" firstAttribute="leading" secondItem="hPO-vQ-1Iv" secondAttribute="leading" id="dNi-hh-TgC"/>
                                     <constraint firstAttribute="trailing" secondItem="Qrh-Ut-SnB" secondAttribute="trailing" id="gLj-ZE-RqH"/>
-                                    <constraint firstItem="qcb-ZT-raL" firstAttribute="leading" secondItem="D1D-cm-fjz" secondAttribute="trailing" constant="6" id="guE-t4-tMr"/>
-                                    <constraint firstItem="fea-lH-Nvd" firstAttribute="leading" secondItem="Btc-ul-Fxp" secondAttribute="trailing" constant="4" id="hl7-t2-etv"/>
+                                    <constraint firstAttribute="trailing" secondItem="UxK-0A-WKe" secondAttribute="trailing" id="i4Z-eP-Bl9"/>
                                     <constraint firstItem="Qrh-Ut-SnB" firstAttribute="leading" secondItem="hPO-vQ-1Iv" secondAttribute="leading" id="jdc-jt-KwK"/>
-                                    <constraint firstItem="D1D-cm-fjz" firstAttribute="leading" secondItem="hPO-vQ-1Iv" secondAttribute="leading" id="jwG-GT-8sk"/>
-                                    <constraint firstItem="6Xx-r3-bfh" firstAttribute="leading" secondItem="aeP-2c-d9s" secondAttribute="trailing" constant="5" id="lAx-VH-hZS"/>
-                                    <constraint firstAttribute="trailing" secondItem="WIF-oZ-owF" secondAttribute="trailing" id="mcE-db-S3k"/>
-                                    <constraint firstItem="D1D-cm-fjz" firstAttribute="top" secondItem="qcb-ZT-raL" secondAttribute="top" id="mct-2R-jVm"/>
-                                    <constraint firstItem="fea-lH-Nvd" firstAttribute="centerX" secondItem="WIF-oZ-owF" secondAttribute="centerX" constant="34" id="n57-mq-S32"/>
-                                    <constraint firstItem="WIF-oZ-owF" firstAttribute="trailing" secondItem="6Xx-r3-bfh" secondAttribute="trailing" id="nIx-x8-sU2"/>
-                                    <constraint firstItem="D1D-cm-fjz" firstAttribute="bottom" secondItem="hPO-vQ-1Iv" secondAttribute="bottomMargin" constant="4.5" id="oKs-mh-bvU"/>
-                                    <constraint firstItem="aeP-2c-d9s" firstAttribute="baseline" secondItem="6Xx-r3-bfh" secondAttribute="firstBaseline" id="pAy-Rw-Iyz"/>
-                                    <constraint firstItem="aeP-2c-d9s" firstAttribute="top" secondItem="6Xx-r3-bfh" secondAttribute="top" id="piD-nb-8jl"/>
+                                    <constraint firstItem="UxK-0A-WKe" firstAttribute="leading" secondItem="hPO-vQ-1Iv" secondAttribute="leading" id="pSQ-I3-hOT"/>
                                     <constraint firstItem="Qrh-Ut-SnB" firstAttribute="top" secondItem="hPO-vQ-1Iv" secondAttribute="top" id="rSv-Hd-Gdb"/>
-                                    <constraint firstItem="aeP-2c-d9s" firstAttribute="leading" secondItem="Mrd-VV-o3o" secondAttribute="trailing" constant="73" id="us4-FG-vbE"/>
-                                    <constraint firstItem="Btc-ul-Fxp" firstAttribute="bottom" secondItem="fea-lH-Nvd" secondAttribute="bottom" id="vld-Pn-bGg"/>
-                                    <constraint firstItem="Btc-ul-Fxp" firstAttribute="leading" secondItem="qcb-ZT-raL" secondAttribute="trailing" constant="67" id="xhH-zR-5AO"/>
+                                    <constraint firstItem="UxK-0A-WKe" firstAttribute="top" secondItem="Qrh-Ut-SnB" secondAttribute="bottom" id="t4Z-GC-2Bi"/>
+                                    <constraint firstItem="UxK-0A-WKe" firstAttribute="top" secondItem="tR8-oS-Tis" secondAttribute="bottom" constant="8" symbolic="YES" id="vbz-GD-tPe"/>
                                     <constraint firstItem="tR8-oS-Tis" firstAttribute="top" secondItem="hPO-vQ-1Iv" secondAttribute="topMargin" constant="-8" id="yND-qO-sXo"/>
                                     <constraint firstItem="tR8-oS-Tis" firstAttribute="leading" secondItem="hPO-vQ-1Iv" secondAttribute="leadingMargin" id="zKg-PJ-0Ou"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g4f-xo-Fh4">
-                                <rect key="frame" x="0.0" y="100" width="375" height="567"/>
+                                <rect key="frame" x="0.0" y="91" width="375" height="576"/>
                                 <subviews>
                                     <button hidden="YES" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D31-ih-2jH">
-                                        <rect key="frame" x="114" y="-4" width="63" height="26"/>
+                                        <rect key="frame" x="103" y="-1" width="63" height="26"/>
                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="26" id="Mrz-SW-uE9"/>
@@ -571,7 +563,8 @@ Every gift goes directly to provide lessons to children who never have the oppor
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstItem="D31-ih-2jH" firstAttribute="leading" secondItem="g4f-xo-Fh4" secondAttribute="leading" constant="114" id="jO3-FN-Dik"/>
+                                    <constraint firstItem="D31-ih-2jH" firstAttribute="top" secondItem="g4f-xo-Fh4" secondAttribute="top" constant="-1" id="BN6-ul-IkN"/>
+                                    <constraint firstItem="D31-ih-2jH" firstAttribute="leading" secondItem="g4f-xo-Fh4" secondAttribute="leading" constant="103" id="jO3-FN-Dik"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -581,14 +574,9 @@ Every gift goes directly to provide lessons to children who never have the oppor
                             <constraint firstItem="g4f-xo-Fh4" firstAttribute="bottom" secondItem="ZRA-5M-pXC" secondAttribute="top" id="HHn-kj-eDl"/>
                             <constraint firstItem="hPO-vQ-1Iv" firstAttribute="leading" secondItem="g4f-xo-Fh4" secondAttribute="leading" id="IU2-nC-ZV4"/>
                             <constraint firstItem="g4f-xo-Fh4" firstAttribute="top" secondItem="hPO-vQ-1Iv" secondAttribute="bottom" id="Lzd-ML-nYP"/>
-                            <constraint firstItem="g4f-xo-Fh4" firstAttribute="top" secondItem="0sa-3s-0f7" secondAttribute="top" constant="100" id="OgB-2F-RC4"/>
-                            <constraint firstItem="D31-ih-2jH" firstAttribute="top" secondItem="Mrd-VV-o3o" secondAttribute="bottom" id="Uxg-b7-Voq"/>
                             <constraint firstItem="hPO-vQ-1Iv" firstAttribute="trailing" secondItem="g4f-xo-Fh4" secondAttribute="trailing" id="VTJ-jl-e0r"/>
                             <constraint firstItem="hPO-vQ-1Iv" firstAttribute="leading" secondItem="0sa-3s-0f7" secondAttribute="leading" id="ZVh-0P-b9I"/>
-                            <constraint firstItem="D31-ih-2jH" firstAttribute="height" secondItem="Mrd-VV-o3o" secondAttribute="height" id="d0G-2r-ncN"/>
-                            <constraint firstItem="g4f-xo-Fh4" firstAttribute="top" secondItem="WIF-oZ-owF" secondAttribute="bottom" id="scZ-E2-4Ry"/>
                             <constraint firstItem="hPO-vQ-1Iv" firstAttribute="top" secondItem="0sa-3s-0f7" secondAttribute="top" id="vCh-se-5if"/>
-                            <constraint firstItem="D31-ih-2jH" firstAttribute="width" secondItem="Mrd-VV-o3o" secondAttribute="width" id="vDI-mV-Opt"/>
                         </constraints>
                     </view>
                     <connections>
@@ -601,7 +589,7 @@ Every gift goes directly to provide lessons to children who never have the oppor
                         <outletCollection property="menuButtons" destination="fea-lH-Nvd" collectionClass="NSMutableArray" id="ykY-GD-WL2"/>
                         <outletCollection property="menuButtons" destination="aeP-2c-d9s" collectionClass="NSMutableArray" id="aVd-Ex-toW"/>
                         <outletCollection property="menuButtons" destination="6Xx-r3-bfh" collectionClass="NSMutableArray" id="hDs-oT-kfm"/>
-                        <outletCollection property="menuButtons" destination="D31-ih-2jH" collectionClass="NSMutableArray" id="peW-49-3bY"/>
+                        <outletCollection property="menuButtons" destination="D31-ih-2jH" collectionClass="NSMutableArray" id="ktc-e5-a21"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gw8-jk-oGz" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -627,116 +615,118 @@ Every gift goes directly to provide lessons to children who never have the oppor
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Home page" translatesAutoresizingMaskIntoConstraints="NO" id="T8c-bs-rZX">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="163"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="165"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="165" id="E3r-HJ-KIN"/>
+                                                </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome To GallopNYC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4lH-L9-5bp">
-                                                <rect key="frame" x="18" y="111" width="246" height="30"/>
+                                                <rect key="frame" x="8" y="111" width="246" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="DRM-ex-HN0"/>
                                                     <constraint firstAttribute="width" constant="246" id="xiG-Mw-azA"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="17"/>
-                                                <color key="textColor" red="0.93862483640000005" green="0.4680964661" blue="0.057111258989999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About Us:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uTc-Kn-C4X">
-                                                <rect key="frame" x="18" y="189" width="100" height="18"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="18" id="3qr-ci-Ouo"/>
-                                                    <constraint firstAttribute="width" constant="100" id="uc4-4G-bgJ"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="15"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gbX-uP-gJm">
-                                                <rect key="frame" x="18" y="215" width="338" height="131"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="338" id="AB7-zU-WHp"/>
-                                                    <constraint firstAttribute="height" constant="131" id="oHb-5W-uKO"/>
-                                                </constraints>
-                                                <string key="text">GallopNYC offers therapeutic horsemanship programs to children and adults with disabilities and special needs, including Veterans and at risk youth. We serve 500 riders a week and operate our riding program at six locations. Schedules at each location vary seasonally. This fall (2016) we open our own dedicated site at Gemini Stables!</string>
-                                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="13"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Our Mission:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hx8-o6-x5x">
-                                                <rect key="frame" x="18" y="354" width="153" height="23"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="23" id="vfe-Zc-JnJ"/>
-                                                    <constraint firstAttribute="width" constant="153" id="xiK-JE-UUa"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="15"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="337" translatesAutoresizingMaskIntoConstraints="NO" id="KwI-05-gT1">
-                                                <rect key="frame" x="18" y="376" width="337" height="80"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="80" id="lZj-jI-V3O"/>
-                                                    <constraint firstAttribute="width" constant="337" id="wyK-pY-GX3"/>
-                                                </constraints>
-                                                <string key="text">We use therapeutic horsemanship to help riders In NYC with disabilities walk, talk and learn,inspiring them to live their lives as fully, independently and productively as possible.</string>
-                                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="13"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Our Vision:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZoB-La-WCf">
-                                                <rect key="frame" x="18" y="464" width="160" height="23"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="160" id="Ffc-7d-W7t"/>
-                                                    <constraint firstAttribute="height" constant="23" id="t4M-Vk-hbr"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="15"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="That every child with a disability in New York City has access to therapeutic horseback riding." textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wCw-6G-LAm">
-                                                <rect key="frame" x="18" y="484" width="338" height="52"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="52" id="374-w9-Yea"/>
-                                                    <constraint firstAttribute="height" constant="52" id="BXH-4t-lMN"/>
-                                                    <constraint firstAttribute="width" constant="338" id="L2H-sz-EbY"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="13"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="s90-0P-uGd">
+                                                <rect key="frame" x="18" y="178" width="338" height="327"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About Us:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uTc-Kn-C4X">
+                                                        <rect key="frame" x="0.0" y="0.0" width="100" height="18"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="18" id="3qr-ci-Ouo"/>
+                                                            <constraint firstAttribute="width" constant="100" id="uc4-4G-bgJ"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="15"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gbX-uP-gJm">
+                                                        <rect key="frame" x="0.0" y="18" width="338" height="131"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="338" id="AB7-zU-WHp"/>
+                                                            <constraint firstAttribute="height" constant="131" id="oHb-5W-uKO"/>
+                                                        </constraints>
+                                                        <string key="text">GallopNYC offers therapeutic horsemanship programs to children and adults with disabilities and special needs, including Veterans and at risk youth. We serve 500 riders a week and operate our riding program at six locations. Schedules at each location vary seasonally. This fall (2016) we open our own dedicated site at Gemini Stables!</string>
+                                                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="13"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Our Mission:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hx8-o6-x5x">
+                                                        <rect key="frame" x="0.0" y="149" width="153" height="23"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="23" id="vfe-Zc-JnJ"/>
+                                                            <constraint firstAttribute="width" constant="153" id="xiK-JE-UUa"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="15"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="337" translatesAutoresizingMaskIntoConstraints="NO" id="KwI-05-gT1">
+                                                        <rect key="frame" x="0.0" y="172" width="337" height="80"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="80" id="lZj-jI-V3O"/>
+                                                            <constraint firstAttribute="width" constant="337" id="wyK-pY-GX3"/>
+                                                        </constraints>
+                                                        <string key="text">We use therapeutic horsemanship to help riders In NYC with disabilities walk, talk and learn,inspiring them to live their lives as fully, independently and productively as possible.</string>
+                                                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="13"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Our Vision:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZoB-La-WCf">
+                                                        <rect key="frame" x="0.0" y="252" width="160" height="23"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="160" id="Ffc-7d-W7t"/>
+                                                            <constraint firstAttribute="height" constant="23" id="t4M-Vk-hbr"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="15"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="That every child with a disability in New York City has access to therapeutic horseback riding." textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wCw-6G-LAm">
+                                                        <rect key="frame" x="0.0" y="275" width="338" height="52"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="52" id="374-w9-Yea"/>
+                                                            <constraint firstAttribute="height" constant="52" id="BXH-4t-lMN"/>
+                                                            <constraint firstAttribute="width" constant="338" id="L2H-sz-EbY"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="13"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We have the horsepower to change the lives of people with disabilities" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iWn-Z8-oZg">
-                                                <rect key="frame" x="18" y="26" width="338" height="60"/>
+                                                <rect key="frame" x="8" y="25" width="360" height="60"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="60" id="1OE-E2-maN"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="16"/>
-                                                <color key="textColor" red="0.93862483640000005" green="0.4680964661" blue="0.057111258989999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                         <color key="backgroundColor" red="1" green="0.9098870765" blue="0.86393200160000005" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
-                                            <constraint firstItem="ZoB-La-WCf" firstAttribute="top" secondItem="Hx8-o6-x5x" secondAttribute="bottom" constant="87" id="1VI-j3-16q"/>
-                                            <constraint firstItem="uTc-Kn-C4X" firstAttribute="top" secondItem="T8c-bs-rZX" secondAttribute="bottom" constant="26" id="2Nw-Tt-Gf6"/>
-                                            <constraint firstItem="KwI-05-gT1" firstAttribute="leading" secondItem="ZoB-La-WCf" secondAttribute="leading" id="2ef-pR-uBd"/>
-                                            <constraint firstItem="4lH-L9-5bp" firstAttribute="leading" secondItem="uTc-Kn-C4X" secondAttribute="leading" id="9Tg-NO-FmI"/>
-                                            <constraint firstItem="iWn-Z8-oZg" firstAttribute="trailing" secondItem="gbX-uP-gJm" secondAttribute="trailing" id="Add-SF-Y3B"/>
-                                            <constraint firstItem="uTc-Kn-C4X" firstAttribute="top" secondItem="4lH-L9-5bp" secondAttribute="bottom" constant="48" id="BW3-wI-L2I"/>
-                                            <constraint firstItem="Hx8-o6-x5x" firstAttribute="top" secondItem="gbX-uP-gJm" secondAttribute="bottom" constant="8" id="BbU-nC-gcj"/>
-                                            <constraint firstItem="ZoB-La-WCf" firstAttribute="top" secondItem="KwI-05-gT1" secondAttribute="bottom" constant="8" id="CTi-OB-9RJ"/>
+                                            <constraint firstItem="s90-0P-uGd" firstAttribute="centerY" secondItem="dt2-RO-4sb" secondAttribute="centerY" constant="8" id="0nc-EV-dvk"/>
+                                            <constraint firstItem="s90-0P-uGd" firstAttribute="top" secondItem="T8c-bs-rZX" secondAttribute="bottom" constant="13" id="4bq-wC-WkK"/>
+                                            <constraint firstItem="s90-0P-uGd" firstAttribute="leading" secondItem="dt2-RO-4sb" secondAttribute="leading" constant="18" id="CtX-Ld-GWI"/>
+                                            <constraint firstItem="iWn-Z8-oZg" firstAttribute="top" secondItem="dt2-RO-4sb" secondAttribute="top" constant="25" id="H97-Xl-CJD"/>
                                             <constraint firstAttribute="trailing" secondItem="T8c-bs-rZX" secondAttribute="trailing" id="HFW-FZ-j8y"/>
-                                            <constraint firstItem="ZoB-La-WCf" firstAttribute="leading" secondItem="wCw-6G-LAm" secondAttribute="leading" id="OJv-k5-Pw3"/>
+                                            <constraint firstItem="s90-0P-uGd" firstAttribute="centerX" secondItem="dt2-RO-4sb" secondAttribute="centerX" id="NJW-Kr-LvQ"/>
                                             <constraint firstItem="T8c-bs-rZX" firstAttribute="centerX" secondItem="iWn-Z8-oZg" secondAttribute="centerX" id="PRD-5j-xyP"/>
-                                            <constraint firstItem="uTc-Kn-C4X" firstAttribute="leading" secondItem="gbX-uP-gJm" secondAttribute="leading" id="Q2k-t8-nOg"/>
-                                            <constraint firstItem="gbX-uP-gJm" firstAttribute="top" secondItem="uTc-Kn-C4X" secondAttribute="bottom" constant="8" id="TU2-sS-Eua"/>
-                                            <constraint firstItem="Hx8-o6-x5x" firstAttribute="leading" secondItem="KwI-05-gT1" secondAttribute="leading" id="Zx9-Pr-uRv"/>
-                                            <constraint firstItem="wCw-6G-LAm" firstAttribute="top" secondItem="KwI-05-gT1" secondAttribute="bottom" constant="28" id="eri-gE-pSy"/>
+                                            <constraint firstAttribute="trailing" secondItem="iWn-Z8-oZg" secondAttribute="trailing" constant="7" id="Umy-Sp-vNj"/>
+                                            <constraint firstItem="iWn-Z8-oZg" firstAttribute="leading" secondItem="dt2-RO-4sb" secondAttribute="leading" constant="8" id="W0x-11-4pW"/>
                                             <constraint firstItem="iWn-Z8-oZg" firstAttribute="leading" secondItem="4lH-L9-5bp" secondAttribute="leading" id="fRq-mI-SDe"/>
-                                            <constraint firstItem="4lH-L9-5bp" firstAttribute="top" secondItem="iWn-Z8-oZg" secondAttribute="bottom" constant="25" id="gpg-fA-Hjv"/>
-                                            <constraint firstItem="KwI-05-gT1" firstAttribute="top" secondItem="gbX-uP-gJm" secondAttribute="bottom" constant="30" id="hUt-I6-tlh"/>
-                                            <constraint firstItem="iWn-Z8-oZg" firstAttribute="top" secondItem="dt2-RO-4sb" secondAttribute="top" constant="26" id="lM0-CS-UUf"/>
+                                            <constraint firstItem="4lH-L9-5bp" firstAttribute="top" secondItem="iWn-Z8-oZg" secondAttribute="bottom" constant="26" id="gpg-fA-Hjv"/>
+                                            <constraint firstItem="iWn-Z8-oZg" firstAttribute="top" secondItem="dt2-RO-4sb" secondAttribute="top" constant="25" id="lM0-CS-UUf"/>
+                                            <constraint firstItem="4lH-L9-5bp" firstAttribute="top" secondItem="iWn-Z8-oZg" secondAttribute="bottom" constant="26" id="mOy-uj-Gja"/>
                                             <constraint firstItem="T8c-bs-rZX" firstAttribute="leading" secondItem="dt2-RO-4sb" secondAttribute="leading" id="qYy-og-2SA"/>
-                                            <constraint firstItem="gbX-uP-gJm" firstAttribute="leading" secondItem="Hx8-o6-x5x" secondAttribute="leading" id="s9Q-ZN-0FO"/>
                                             <constraint firstItem="T8c-bs-rZX" firstAttribute="top" secondItem="dt2-RO-4sb" secondAttribute="top" id="wcQ-dl-Qhc"/>
-                                            <constraint firstItem="4lH-L9-5bp" firstAttribute="top" secondItem="iWn-Z8-oZg" secondAttribute="bottom" constant="25" id="wcq-lD-Ogx"/>
+                                            <constraint firstItem="4lH-L9-5bp" firstAttribute="top" secondItem="iWn-Z8-oZg" secondAttribute="bottom" constant="26" id="wcq-lD-Ogx"/>
+                                            <constraint firstAttribute="trailing" secondItem="s90-0P-uGd" secondAttribute="trailing" constant="19" id="x6p-kR-0Ds"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -904,6 +894,7 @@ We ask volunteers to commit to two hours of service a week. Email us at voluntee
                                         <constraints>
                                             <constraint firstItem="dZi-Ib-aor" firstAttribute="leading" secondItem="dus-xp-i6K" secondAttribute="leading" id="2a9-gl-g4b"/>
                                             <constraint firstItem="Qi4-Jz-W7G" firstAttribute="centerY" secondItem="Jww-MG-FVv" secondAttribute="centerY" id="5Ig-pk-h2I"/>
+                                            <constraint firstAttribute="height" constant="667" id="7lN-Dx-d1X"/>
                                             <constraint firstItem="dZi-Ib-aor" firstAttribute="top" secondItem="xGZ-BS-Tch" secondAttribute="bottom" constant="90" id="8Qe-mE-5Gl"/>
                                             <constraint firstItem="8go-UM-IYz" firstAttribute="top" secondItem="Ula-vY-1db" secondAttribute="bottom" constant="8" symbolic="YES" id="9bs-gD-cM5"/>
                                             <constraint firstItem="dus-xp-i6K" firstAttribute="leading" secondItem="Ula-vY-1db" secondAttribute="leading" id="HUu-EO-h1O"/>
@@ -1007,7 +998,7 @@ We ask volunteers to commit to two hours of service a week. Email us at voluntee
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9q9-Tj-bKT">
+                            <scrollView multipleTouchEnabled="YES" contentMode="scaleToFill" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9q9-Tj-bKT">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e2k-As-L8p">
@@ -1166,6 +1157,7 @@ Our evaluations show measurable benefits to our riders – improving balance, co
                                                 <rect key="frame" x="27" y="269" width="319" height="210"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="319" id="IUN-Sb-66s"/>
+                                                    <constraint firstAttribute="height" constant="210" id="irx-3j-JOt"/>
                                                 </constraints>
                                                 <string key="text">GallopNYC brings the proven benefits of therapeutic horsemanship to provide measurable benefits for people with developmental, emotional, social, and physical challenges. 
 
@@ -1187,6 +1179,7 @@ GallopNYC serves hundreds of riders every week at six NYC locations. GallopNYC i
                                                 <rect key="frame" x="27" y="536" width="321" height="86"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="321" id="QTI-ix-auW"/>
+                                                    <constraint firstAttribute="height" constant="86" id="TfD-Ld-8Rs"/>
                                                 </constraints>
                                                 <string key="text">In Hippotherapy, a licensed physical therapist works with each child while the child is riding. The therapist is trained in using a horse as a physical therapy tool. The therapists work independently with GallopNYC’s assistance.</string>
                                                 <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="12"/>
@@ -1206,6 +1199,7 @@ GallopNYC serves hundreds of riders every week at six NYC locations. GallopNYC i
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Awm-fX-A1h">
                                                 <rect key="frame" x="27" y="1133" width="321" height="68"/>
                                                 <constraints>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="68" id="Fga-Un-NAj"/>
                                                     <constraint firstAttribute="height" constant="68" id="Yxo-xK-5GR"/>
                                                 </constraints>
                                                 <string key="text">A leadership program for war veterans with visible and/or invisible injuries, designed to build competence, confidence and leadership. </string>
@@ -1219,7 +1213,7 @@ GallopNYC serves hundreds of riders every week at six NYC locations. GallopNYC i
                                                     <constraint firstAttribute="height" constant="55" id="idh-ZG-v6p"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="17"/>
-                                                <color key="textColor" red="0.93862483640000005" green="0.4680964661" blue="0.057111258989999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
@@ -1288,13 +1282,12 @@ GallopNYC serves hundreds of riders every week at six NYC locations. GallopNYC i
                                     </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="375" id="3cf-47-CwU"/>
                                     <constraint firstItem="e2k-As-L8p" firstAttribute="top" secondItem="9q9-Tj-bKT" secondAttribute="top" id="5No-pL-E0y"/>
                                     <constraint firstItem="e2k-As-L8p" firstAttribute="leading" secondItem="9q9-Tj-bKT" secondAttribute="leading" id="BhJ-e0-sfX"/>
+                                    <constraint firstAttribute="height" constant="667" id="SrY-ox-ekB"/>
+                                    <constraint firstAttribute="bottom" secondItem="e2k-As-L8p" secondAttribute="bottom" id="URY-2i-ZPu"/>
                                     <constraint firstItem="e2k-As-L8p" firstAttribute="centerX" secondItem="9q9-Tj-bKT" secondAttribute="centerX" id="Y1q-rD-tqS"/>
                                     <constraint firstAttribute="trailing" secondItem="e2k-As-L8p" secondAttribute="trailing" id="eo7-xN-Q4r"/>
-                                    <constraint firstAttribute="bottom" secondItem="e2k-As-L8p" secondAttribute="bottom" constant="-548" id="sQU-3f-fRP"/>
-                                    <constraint firstAttribute="height" constant="667" id="zg5-eH-qEe"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
@@ -1303,7 +1296,8 @@ GallopNYC serves hundreds of riders every week at six NYC locations. GallopNYC i
                             <constraint firstItem="9q9-Tj-bKT" firstAttribute="top" secondItem="KvA-zt-0Fd" secondAttribute="top" id="1xG-N5-lCd"/>
                             <constraint firstAttribute="trailing" secondItem="9q9-Tj-bKT" secondAttribute="trailing" id="D8q-9G-ojb"/>
                             <constraint firstItem="9q9-Tj-bKT" firstAttribute="leading" secondItem="KvA-zt-0Fd" secondAttribute="leading" id="ZE8-3t-m5w"/>
-                            <constraint firstItem="9q9-Tj-bKT" firstAttribute="bottom" secondItem="8qu-Mf-xqg" secondAttribute="top" id="w5T-li-Jfz"/>
+                            <constraint firstItem="9q9-Tj-bKT" firstAttribute="centerX" secondItem="KvA-zt-0Fd" secondAttribute="centerX" id="c4h-cW-btX"/>
+                            <constraint firstItem="8qu-Mf-xqg" firstAttribute="top" secondItem="9q9-Tj-bKT" secondAttribute="bottom" id="cz9-72-Tcn"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -1358,11 +1352,11 @@ Green means TR lessons are happening as scheduled, a red means lessons have been
                                         <rect key="frame" x="0.0" y="28" width="343" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dky-A3-rVP" id="4dr-u2-GB1">
-                                            <rect key="frame" x="0.0" y="0.0" width="343" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5Pu-gr-oZb">
-                                                    <rect key="frame" x="15" y="0.0" width="313" height="43"/>
+                                                    <rect key="frame" x="15" y="0.0" width="313" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -1386,11 +1380,11 @@ Green means TR lessons are happening as scheduled, a red means lessons have been
                                         <rect key="frame" x="0.0" y="72" width="343" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="67q-7r-pud" id="zjd-d6-jEB">
-                                            <rect key="frame" x="0.0" y="0.0" width="343" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fHQ-Fq-fNU">
-                                                    <rect key="frame" x="15" y="0.0" width="313" height="43"/>
+                                                    <rect key="frame" x="15" y="0.0" width="313" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -1414,11 +1408,11 @@ Green means TR lessons are happening as scheduled, a red means lessons have been
                                         <rect key="frame" x="0.0" y="116" width="343" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6An-hf-gdB" id="8XX-AY-hXG">
-                                            <rect key="frame" x="0.0" y="0.0" width="343" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bXy-Qf-WUz">
-                                                    <rect key="frame" x="15" y="0.0" width="313" height="43"/>
+                                                    <rect key="frame" x="15" y="0.0" width="313" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -1442,11 +1436,11 @@ Green means TR lessons are happening as scheduled, a red means lessons have been
                                         <rect key="frame" x="0.0" y="160" width="343" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qXU-O0-wD0" id="POv-gO-naF">
-                                            <rect key="frame" x="0.0" y="0.0" width="343" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="FXk-zC-6Ls">
-                                                    <rect key="frame" x="15" y="0.0" width="313" height="43"/>
+                                                    <rect key="frame" x="15" y="0.0" width="313" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -1470,11 +1464,11 @@ Green means TR lessons are happening as scheduled, a red means lessons have been
                                         <rect key="frame" x="0.0" y="204" width="343" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ctk-uN-M0S" id="JqZ-rZ-NkJ">
-                                            <rect key="frame" x="0.0" y="0.0" width="343" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Mfv-sl-wce">
-                                                    <rect key="frame" x="15" y="0.0" width="313" height="43"/>
+                                                    <rect key="frame" x="15" y="0.0" width="313" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -1498,11 +1492,11 @@ Green means TR lessons are happening as scheduled, a red means lessons have been
                                         <rect key="frame" x="0.0" y="248" width="343" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="MPe-Ct-0Hk" id="LUT-EL-uND">
-                                            <rect key="frame" x="0.0" y="0.0" width="343" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="GWN-bV-Mzh">
-                                                    <rect key="frame" x="15" y="0.0" width="313" height="43"/>
+                                                    <rect key="frame" x="15" y="0.0" width="313" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -1526,11 +1520,11 @@ Green means TR lessons are happening as scheduled, a red means lessons have been
                                         <rect key="frame" x="0.0" y="292" width="343" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Jda-TK-qDj" id="gtH-9o-iMD">
-                                            <rect key="frame" x="0.0" y="0.0" width="343" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="W0i-qX-8HN">
-                                                    <rect key="frame" x="15" y="0.0" width="313" height="43"/>
+                                                    <rect key="frame" x="15" y="0.0" width="313" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -1554,11 +1548,11 @@ Green means TR lessons are happening as scheduled, a red means lessons have been
                                         <rect key="frame" x="0.0" y="336" width="343" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="20d-wA-JpB" id="yhW-aF-0tV">
-                                            <rect key="frame" x="0.0" y="0.0" width="343" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="BTe-Vm-hPF">
-                                                    <rect key="frame" x="19" y="0.0" width="309" height="43"/>
+                                                    <rect key="frame" x="19" y="0.0" width="309" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>

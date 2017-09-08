@@ -15,8 +15,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        PayPalMobile .initializeWithClientIds(forEnvironments: [PayPalEnvironmentProduction: "AXl7aAEtKnta6GkORKubBfPhSaY3Qm58wk-zju8tMMX7TiP87U3EFqaqfUdNYKAL9oLKY6h9XOdmGfWD",
-                                                                PayPalEnvironmentSandbox: "alicia-facilitator@gallopnyc.org"])
+        PayPalMobile .initializeWithClientIds(forEnvironments: [PayPalEnvironmentProduction: "AVJTZY0ldJug54Gir5shBS02eJJXLeGbtoyiBW-dhO2jdClmC6c-gTT73MqNZP9hxyvg82belW59c5Nh",
+                                                                PayPalEnvironmentSandbox: "alicia@gallopnyc.org"])
+        
+        /*PayPalMobile .initializeWithClientIds(forEnvironments: [PayPalEnvironmentProduction: "AXl7aAEtKnta6GkORKubBfPhSaY3Qm58wk-zju8tMMX7TiP87U3EFqaqfUdNYKAL9oLKY6h9XOdmGfWD",
+                                                                PayPalEnvironmentSandbox: "alicia-facilitator@gallopnyc.org"])*/
         
         return true
     }
